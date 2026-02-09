@@ -1,0 +1,69 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+import type { Locale } from '../i18n/utils';
+import { getTranslations, getLocalizedPath } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+  currentPath?: string;
+}
+
+const { locale, currentPath = '' } = Astro.props;
+const t = getTranslations(locale);
+
+const otherLocale: Locale = locale === 'pl' ? 'en' : 'pl';
+const currentPathWithoutLocale = currentPath.replace(`/${locale}`, '');
+
+// Map PL paths to EN paths
+const pathMap: Record<string, string> = {
+  '/kontakt': '/contact',
+  '/contact': '/kontakt',
+};
+
+let switchPath = currentPathWithoutLocale;
+if (locale === 'pl' && pathMap[currentPathWithoutLocale]) {
+  switchPath = pathMap[currentPathWithoutLocale];
+} else if (locale === 'en' && pathMap[currentPathWithoutLocale]) {
+  switchPath = pathMap[currentPathWithoutLocale];
+}
+
+const langSwitchUrl = getLocalizedPath(otherLocale, switchPath);
+
+const navItems = [
+  { href: getLocalizedPath(locale, '/'), label: t.nav.home },
+  { href: getLocalizedPath(locale, '/portfolio'), label: t.nav.portfolio },
+  { href: getLocalizedPath(locale, locale === 'pl' ? '/kontakt' : '/contact'), label: t.nav.contact },
+];
+---
+
+<nav class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center space-x-8">
+        <a href={getLocalizedPath(locale, '/')} class="font-bold text-xl">
+          Marcin Gromek
+        </a>
+        <div class="hidden md:flex space-x-4">
+          {navItems.map((item) => (
+            <a
+              href={item.href}
+              class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a
+          href={langSwitchUrl}
+          class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors uppercase"
+          aria-label={`Switch to ${otherLocale}`}
+        >
+          {otherLocale}
+        </a>
+        <ThemeToggle />
+      </div>
+    </div>
+  </div>
+</nav>
