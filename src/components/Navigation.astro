@@ -12,21 +12,18 @@ const { locale, currentPath = '' } = Astro.props;
 const t = getTranslations(locale);
 
 const otherLocale: Locale = locale === 'pl' ? 'en' : 'pl';
-const currentPathWithoutLocale = currentPath.replace(`/${locale}`, '');
 
-// Map PL paths to EN paths
+// Map PL paths to EN paths (PL is root, EN has /en prefix)
 const pathMap: Record<string, string> = {
+  '/': '/',
+  '/portfolio': '/portfolio',
   '/kontakt': '/contact',
-  '/contact': '/kontakt',
+  '/en/': '/',
+  '/en/portfolio': '/portfolio',
+  '/en/contact': '/kontakt',
 };
 
-let switchPath = currentPathWithoutLocale;
-if (locale === 'pl' && pathMap[currentPathWithoutLocale]) {
-  switchPath = pathMap[currentPathWithoutLocale];
-} else if (locale === 'en' && pathMap[currentPathWithoutLocale]) {
-  switchPath = pathMap[currentPathWithoutLocale];
-}
-
+const switchPath = pathMap[currentPath] || '/';
 const langSwitchUrl = getLocalizedPath(otherLocale, switchPath);
 
 const navItems = [

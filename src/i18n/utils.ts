@@ -12,5 +12,9 @@ export function getTranslations(locale: Locale) {
 export const defaultLocale: Locale = 'pl';
 
 export function getLocalizedPath(locale: Locale, path: string = ''): string {
-  return `/${locale}${path}`;
+  // Polish is the default locale (root), English has /en/ prefix
+  if (locale === 'pl') {
+    return path || '/';
+  }
+  return `/en${path}`;
 }
