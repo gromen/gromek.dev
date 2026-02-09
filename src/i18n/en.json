@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Frontend Developer",
+    "cta": "View portfolio"
+  },
+  "footer": {
+    "copyright": "Marcin Gromek. All rights reserved."
+  }
+}

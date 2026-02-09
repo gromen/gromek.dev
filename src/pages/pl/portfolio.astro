@@ -1,0 +1,21 @@
+---
+import { getTranslations } from '../../i18n/utils';
+
+const t = getTranslations('pl');
+const title = `${t.nav.portfolio} — Marcin Gromek`;
+---
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <h1>{t.nav.portfolio}</h1>
+    <p>Portfolio page PL — placeholder</p>
+  </body>
+</html>
