@@ -6,9 +6,155 @@
   },
   "hero": {
     "title": "Frontend Developer",
+    "name": "Marcin Gromek",
+    "subtitle": "Specjalizuję się w React, Next.js, Shopify i WordPress",
     "cta": "Zobacz portfolio"
+  },
+  "about": {
+    "heading": "O mnie",
+    "experience": "10+ lat doświadczenia w e-commerce & web development",
+    "description": "Frontend developer z pasją do tworzenia szybkich, responsywnych i przyjaznych użytkownikowi aplikacji webowych. Specjalizuję się w ekosystemie React oraz platformach e-commerce takich jak Shopify i WordPress."
+  },
+  "techStack": {
+    "heading": "Stack technologiczny",
+    "skills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shopify",
+      "WordPress",
+      "Astro",
+      "Node.js"
+    ]
+  },
+  "projects": {
+    "heading": "Wybrane projekty",
+    "viewAll": "Zobacz wszystkie projekty",
+    "highlights": [
+      {
+        "title": "WojanShop.pl",
+        "description": "Sklep e-commerce na platformie Shopify z integracjami ERP i custom theme",
+        "tags": ["Shopify", "Liquid", "JavaScript"]
+      },
+      {
+        "title": "Miior7.com",
+        "description": "Międzynarodowa platforma e-commerce z wielojęzycznością",
+        "tags": ["Shopify", "React", "TypeScript"]
+      },
+      {
+        "title": "Bellman Espresso",
+        "description": "Strona produktowa z konfiguratorem i integracją płatności",
+        "tags": ["Next.js", "Shopify", "Tailwind CSS"]
+      },
+      {
+        "title": "Desky",
+        "description": "Custom video gallery i rozszerzone funkcjonalności PDP",
+        "tags": ["Shopify", "React", "Custom Apps"]
+      }
+    ]
+  },
+  "experience": {
+    "heading": "Doświadczenie",
+    "timeline": [
+      {
+        "company": "Efigence",
+        "role": "Frontend Developer",
+        "period": "2014–2016",
+        "description": "Tworzenie zaawansowanych platform e-commerce dla dużych klientów. Praca z własnymi frameworkami i narzędziami frontendowymi."
+      },
+      {
+        "company": "Avon",
+        "role": "Frontend Developer",
+        "period": "2016–2017",
+        "description": "Rozwój aplikacji webowych dla międzynarodowej firmy kosmetycznej. Optymalizacja wydajności i responsywności interfejsów."
+      },
+      {
+        "company": "MyWorld",
+        "role": "Frontend Developer",
+        "period": "2017–2018",
+        "description": "Budowa platform lojalnościowych i aplikacji cashback. Integracja z systemami płatności i API partnerów."
+      },
+      {
+        "company": "BitBag",
+        "role": "Senior Frontend Developer",
+        "period": "2018–2019",
+        "description": "Specjalizacja w Sylius e-commerce. Tworzenie zaawansowanych sklepów internetowych opartych o Symfony i nowoczesne technologie frontend."
+      },
+      {
+        "company": "Wunderman Thompson",
+        "role": "Senior Frontend Developer",
+        "period": "2019–2020",
+        "description": "Realizacja projektów dla największych marek (Bank Pekao S.A., PLAY, Emirates NBD). Praca w międzynarodowym środowisku agencyjnym."
+      },
+      {
+        "company": "Media4U",
+        "role": "Frontend Developer",
+        "period": "2020–2021",
+        "description": "Tworzenie rozwiązań dla branży mody i e-commerce. Projekty dla marek takich jak Marilyn, Tatuum, Cosmedica."
+      },
+      {
+        "company": "MachinePortal",
+        "role": "Fullstack Developer",
+        "period": "2021–2022",
+        "description": "Rozwój platformy B2B dla branży maszyn i urządzeń. Praca nad frontendem i backendem, integracje z systemami ERP."
+      },
+      {
+        "company": "Brand Active",
+        "role": "Frontend Developer",
+        "period": "2022–2023",
+        "description": "Implementacja projektów Shopify Plus dla międzynarodowych klientów. Rozbudowa funkcjonalności sklepów i optymalizacja konwersji."
+      },
+      {
+        "company": "Desky",
+        "role": "Senior Frontend Developer / Team Lead",
+        "period": "2023–obecnie",
+        "description": "Prowadzenie zespołu frontend. Rozwój platformy e-commerce z zaawansowanymi funkcjami (video galleries, custom PDP). React, Next.js, TypeScript."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Zainteresowany współpracą?",
+    "description": "Skontaktuj się ze mną, aby omówić Twój projekt",
+    "button": "Napisz do mnie"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Wybrane projekty z ponad 10 lat doświadczenia w e-commerce i web development",
+    "independentProjects": "Projekty samodzielne",
+    "agencyProjects": "Projekty agencyjne",
+    "specialProjects": "Projekty specjalne",
+    "viewProject": "Zobacz projekt",
+    "agencyHighlights": "Najważniejsze projekty agencyjne obejmują współpracę z markami takimi jak:"
   },
   "footer": {
     "copyright": "Marcin Gromek. Wszystkie prawa zastrzeżone."
+  },
+  "contact": {
+    "heading": "Kontakt",
+    "description": "Masz pytania lub chcesz omówić projekt? Skontaktuj się ze mną bezpośrednio lub wypełnij formularz kontaktowy.",
+    "info": {
+      "heading": "Informacje kontaktowe",
+      "email": "Email",
+      "phone": "Telefon",
+      "social": "Sieci społecznościowe"
+    },
+    "form": {
+      "heading": "Formularz kontaktowy",
+      "name": "Imię i nazwisko",
+      "namePlaceholder": "Jan Kowalski",
+      "nameRequired": "Imię i nazwisko jest wymagane",
+      "email": "Adres email",
+      "emailPlaceholder": "jan.kowalski@example.com",
+      "emailRequired": "Adres email jest wymagany",
+      "emailInvalid": "Podaj poprawny adres email",
+      "message": "Wiadomość",
+      "messagePlaceholder": "Opisz swój projekt lub zadaj pytanie...",
+      "messageRequired": "Wiadomość jest wymagana",
+      "submit": "Wyślij wiadomość",
+      "submitting": "Wysyłanie...",
+      "success": "Dziękuję! Twoja wiadomość została wysłana. Odpowiem najszybciej jak to możliwe.",
+      "error": "Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie lub skontaktuj się ze mną bezpośrednio."
+    }
   }
 }

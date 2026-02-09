@@ -6,9 +6,155 @@
   },
   "hero": {
     "title": "Frontend Developer",
+    "name": "Marcin Gromek",
+    "subtitle": "Specializing in React, Next.js, Shopify, and WordPress",
     "cta": "View portfolio"
+  },
+  "about": {
+    "heading": "About me",
+    "experience": "10+ years of experience in e-commerce & web development",
+    "description": "Frontend developer with a passion for building fast, responsive, and user-friendly web applications. I specialize in the React ecosystem and e-commerce platforms like Shopify and WordPress."
+  },
+  "techStack": {
+    "heading": "Tech stack",
+    "skills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shopify",
+      "WordPress",
+      "Astro",
+      "Node.js"
+    ]
+  },
+  "projects": {
+    "heading": "Featured projects",
+    "viewAll": "View all projects",
+    "highlights": [
+      {
+        "title": "WojanShop.pl",
+        "description": "E-commerce store on Shopify with ERP integrations and custom theme",
+        "tags": ["Shopify", "Liquid", "JavaScript"]
+      },
+      {
+        "title": "Miior7.com",
+        "description": "International e-commerce platform with multi-language support",
+        "tags": ["Shopify", "React", "TypeScript"]
+      },
+      {
+        "title": "Bellman Espresso",
+        "description": "Product website with configurator and payment integration",
+        "tags": ["Next.js", "Shopify", "Tailwind CSS"]
+      },
+      {
+        "title": "Desky",
+        "description": "Custom video gallery and enhanced PDP functionality",
+        "tags": ["Shopify", "React", "Custom Apps"]
+      }
+    ]
+  },
+  "experience": {
+    "heading": "Experience",
+    "timeline": [
+      {
+        "company": "Efigence",
+        "role": "Frontend Developer",
+        "period": "2014–2016",
+        "description": "Building advanced e-commerce platforms for large clients. Working with proprietary frameworks and frontend tools."
+      },
+      {
+        "company": "Avon",
+        "role": "Frontend Developer",
+        "period": "2016–2017",
+        "description": "Developing web applications for an international cosmetics company. Optimizing performance and responsiveness of interfaces."
+      },
+      {
+        "company": "MyWorld",
+        "role": "Frontend Developer",
+        "period": "2017–2018",
+        "description": "Building loyalty platforms and cashback applications. Integration with payment systems and partner APIs."
+      },
+      {
+        "company": "BitBag",
+        "role": "Senior Frontend Developer",
+        "period": "2018–2019",
+        "description": "Specializing in Sylius e-commerce. Creating advanced online stores based on Symfony and modern frontend technologies."
+      },
+      {
+        "company": "Wunderman Thompson",
+        "role": "Senior Frontend Developer",
+        "period": "2019–2020",
+        "description": "Delivering projects for major brands (Bank Pekao S.A., PLAY, Emirates NBD). Working in an international agency environment."
+      },
+      {
+        "company": "Media4U",
+        "role": "Frontend Developer",
+        "period": "2020–2021",
+        "description": "Creating solutions for fashion and e-commerce industries. Projects for brands such as Marilyn, Tatuum, Cosmedica."
+      },
+      {
+        "company": "MachinePortal",
+        "role": "Fullstack Developer",
+        "period": "2021–2022",
+        "description": "Developing a B2B platform for machinery and equipment industry. Working on frontend and backend, ERP system integrations."
+      },
+      {
+        "company": "Brand Active",
+        "role": "Frontend Developer",
+        "period": "2022–2023",
+        "description": "Implementing Shopify Plus projects for international clients. Expanding store functionality and optimizing conversions."
+      },
+      {
+        "company": "Desky",
+        "role": "Senior Frontend Developer / Team Lead",
+        "period": "2023–present",
+        "description": "Leading the frontend team. Developing an e-commerce platform with advanced features (video galleries, custom PDP). React, Next.js, TypeScript."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Interested in working together?",
+    "description": "Get in touch to discuss your project",
+    "button": "Contact me"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Selected projects from over 10 years of experience in e-commerce and web development",
+    "independentProjects": "Independent Projects",
+    "agencyProjects": "Agency Projects",
+    "specialProjects": "Special Projects",
+    "viewProject": "View project",
+    "agencyHighlights": "Key agency projects include collaborations with brands such as:"
   },
   "footer": {
     "copyright": "Marcin Gromek. All rights reserved."
+  },
+  "contact": {
+    "heading": "Contact",
+    "description": "Have a question or want to discuss a project? Contact me directly or fill out the contact form.",
+    "info": {
+      "heading": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "social": "Social Media"
+    },
+    "form": {
+      "heading": "Contact Form",
+      "name": "Full name",
+      "namePlaceholder": "John Doe",
+      "nameRequired": "Full name is required",
+      "email": "Email address",
+      "emailPlaceholder": "john.doe@example.com",
+      "emailRequired": "Email address is required",
+      "emailInvalid": "Please enter a valid email address",
+      "message": "Message",
+      "messagePlaceholder": "Describe your project or ask a question...",
+      "messageRequired": "Message is required",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "success": "Thank you! Your message has been sent. I'll get back to you as soon as possible.",
+      "error": "An error occurred while sending the message. Please try again or contact me directly."
+    }
   }
 }

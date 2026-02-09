@@ -122,14 +122,14 @@ Strony do screenshotowania:
 
 ## 6. Kolejność implementacji
 
-1. `npm create astro@latest gromek.dev` + Tailwind + Playwright
-2. BaseLayout + Navigation (z lang switcher PL/EN) + Footer
-3. i18n (pl.json, en.json) + routing `/pl/`, `/en/`
-4. Hero + landing page
+1. ✅ `npm create astro@latest gromek.dev` + Tailwind + Playwright
+2. ✅ BaseLayout + Navigation (z lang switcher PL/EN) + Footer
+3. ✅ i18n (pl.json, en.json) + routing `/pl/`, `/en/`
+4. ✅ Hero + landing page (Hero.astro, SkillBadge.astro, featured projects, CTA)
 5. Content collections (Markdown per projekt)
 6. ProjectCard + portfolio page
 7. ExperienceTimeline (dane z CV)
-8. Kontakt page + Formspree
+8. ✅ Kontakt page + Formspree
 9. `npx tsx scripts/screenshots.ts` — generacja screenshotów
 10. Responsive polish + Lighthouse audit
 11. `git init` + push do GitHub
