@@ -56,5 +56,22 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   </head>
   <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
     <slot />
+    <!-- Chataptor Widget -->
+    <script
+    is:inline
+        src="https://chataptor.com/widget/quantumchat-widget.umd.js"
+        data-api-url="https://chataptor.com"
+        data-site-id="moje-portfolio-1773864592"
+        data-widget-key="cGtf9FCZA1yQd7pe4IBKZFrY4RoNPx8e"
+        data-welcome-message="Cześć w czym mogę pomóc ? :) "
+        data-header-title="Customer Support"
+        data-input-placeholder="Type your message..."
+        data-theme="light"
+        data-position="bottom-right"
+        data-primary-color="#2563eb"
+        data-open-on="click"
+        data-translation-enabled="true"
+        data-debug="false"
+    ></script>
   </body>
 </html>
