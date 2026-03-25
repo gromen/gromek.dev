@@ -3,7 +3,7 @@ title: "Desky"
 description: "Sklep e-commerce z ergonomicznymi biurkami i akcesoriami. Custom features: video gallery na PDP, konfigurator produktów, zaawansowana prezentacja 3D."
 descriptionEn: "E-commerce store for ergonomic desks and accessories. Custom features: video gallery on PDP, product configurator, advanced 3D presentation."
 url: "https://desky.com"
-technologies: ["Shopify", "React", "TypeScript", "Liquid", "Video.js", "3D rendering"]
+technologies: ["Shopify", "Liquid", "JavaScript", "CSS3"]
 image: "/images/projects/placeholder.svg"
 category: "special"
 featured: true

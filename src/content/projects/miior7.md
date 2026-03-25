@@ -3,7 +3,7 @@ title: "MIIOR7"
 description: "Premium sklep e-commerce z ubraniami męskimi. Shopify z custom theme, zaawansowaną konfiguracją produktów i integracją płatności."
 descriptionEn: "Premium men's fashion e-commerce store. Shopify with custom theme, advanced product configuration, and payment integration."
 url: "https://miior7.com"
-technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify APIs"]
+technologies: ["Shopify", "Liquid", "JavaScript", "CSS3"]
 image: "/images/projects/placeholder.svg"
 category: "independent"
 featured: true

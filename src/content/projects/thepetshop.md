@@ -7,9 +7,10 @@ technologies:
   [
     "Shopify Hydrogen",
     "React",
+    "Remix.js",
     "TypeScript",
-    "CSS3",
-    "Shopify Apps",
+    "Tailwind CSS",
+    "GraphQL",
     "Strapi CMS",
   ]
 image: "/images/projects/placeholder.svg"

@@ -7,10 +7,10 @@ technologies:
   [
     "WordPress",
     "WooCommerce",
+    "HTML5",
+    "CSS3",
     "JavaScript",
-    "CSS",
-    "LiteSpeed Cache",
-    "Cloudflare",
+    "PHP",
   ]
 image: "/images/projects/placeholder.svg"
 category: "independent"

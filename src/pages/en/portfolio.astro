@@ -9,18 +9,7 @@ import { getCollection } from 'astro:content';
 const t = getTranslations('en');
 const title = `${t.nav.portfolio} — Marcin Gromek`;
 
-const allProjects = await getCollection('projects');
-
-const specialProjects = allProjects
-  .filter((project) => project.data.category === 'special')
-  .sort((a, b) => a.data.order - b.data.order);
-
-const independentProjects = allProjects
-  .filter((project) => project.data.category === 'independent')
-  .sort((a, b) => a.data.order - b.data.order);
-
-const agencyProjects = allProjects
-  .filter((project) => project.data.category === 'agency')
+const allProjects = (await getCollection('projects'))
   .sort((a, b) => a.data.order - b.data.order);
 ---
 
@@ -37,65 +26,19 @@ const agencyProjects = allProjects
         </p>
       </header>
 
-      {specialProjects.length > 0 && (
-        <section class="mb-16">
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8">
-            {t.portfolio.specialProjects}
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {specialProjects.map((project) => (
-              <ProjectCard
-                title={project.data.title}
-                description={project.data.descriptionEn}
-                url={project.data.url}
-                technologies={project.data.technologies}
-                image={project.data.image}
-              />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {independentProjects.length > 0 && (
-        <section class="mb-16">
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8">
-            {t.portfolio.independentProjects}
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {independentProjects.map((project) => (
-              <ProjectCard
-                title={project.data.title}
-                description={project.data.descriptionEn}
-                url={project.data.url}
-                technologies={project.data.technologies}
-                image={project.data.image}
-              />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {agencyProjects.length > 0 && (
-        <section class="mb-16">
-          <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            {t.portfolio.agencyProjects}
-          </h2>
-          <p class="text-gray-600 dark:text-gray-400 mb-8">
-            {t.portfolio.agencyHighlights}
-          </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {agencyProjects.map((project) => (
-              <ProjectCard
-                title={project.data.title}
-                description={project.data.descriptionEn}
-                url={project.data.url}
-                technologies={project.data.technologies}
-                image={project.data.image}
-              />
-            ))}
-          </div>
-        </section>
-      )}
+      <section class="mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {allProjects.map((project) => (
+            <ProjectCard
+              title={project.data.title}
+              description={project.data.descriptionEn}
+              url={project.data.url}
+              technologies={project.data.technologies}
+              image={project.data.image}
+            />
+          ))}
+        </div>
+      </section>
     </main>
     <Footer locale="en" />
   </div>

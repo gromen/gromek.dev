@@ -1,19 +1,154 @@
 {
-  "nav": {
-    "home": "Home",
-    "portfolio": "Portfolio",
-    "contact": "Contact"
+  "about": {
+    "description": "Frontend developer with a passion for building fast, responsive, and user-friendly web applications. I specialize in the React ecosystem and e-commerce platforms like Shopify and WordPress.",
+    "experience": "10+ years of experience in e-commerce & web development",
+    "heading": "About me"
+  },
+  "contact": {
+    "description": "Have a question or want to discuss a project? Contact me directly or fill out the contact form.",
+    "form": {
+      "email": "Email address",
+      "emailInvalid": "Please enter a valid email address",
+      "emailPlaceholder": "john.doe@example.com",
+      "emailRequired": "Email address is required",
+      "error": "An error occurred while sending the message. Please try again or contact me directly.",
+      "heading": "Contact Form",
+      "message": "Message",
+      "messagePlaceholder": "Describe your project or ask a question...",
+      "messageRequired": "Message is required",
+      "name": "Full name",
+      "namePlaceholder": "John Doe",
+      "nameRequired": "Full name is required",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "success": "Thank you! Your message has been sent. I'll get back to you as soon as possible."
+    },
+    "heading": "Contact",
+    "info": {
+      "email": "Email",
+      "heading": "Contact Information",
+      "phone": "Phone",
+      "social": "Social Media"
+    }
+  },
+  "cta": {
+    "button": "Contact me",
+    "description": "Get in touch to discuss your project",
+    "heading": "Interested in working together?"
+  },
+  "experience": {
+    "heading": "Experience",
+    "timeline": [
+      {
+        "company": "Freelance",
+        "description": "Freelance projects for e-commerce clients. Implementing UI/UX solutions with Astrojs, Shopify Liquid, JS, HTML, CSS3.",
+        "period": "2026–present",
+        "role": "Frontend Developer"
+      },
+      {
+        "company": "Desky",
+        "description": "Developing and maintaining custom Shopify themes and apps for e-commerce clients. Implementing UI/UX solutions with Shopify Liquid, JS, HTML, CSS3.",
+        "period": "2025–2026",
+        "role": "Frontend Developer"
+      },
+      {
+        "company": "Brand Active",
+        "description": "Building e-commerce applications using the Shopify ecosystem. Custom Shopify themes and apps. Working with Shopify Liquid, React.js, Remix.js, TypeScript, Tailwind CSS, Shopify Hydrogen, GraphQL.",
+        "period": "2023–2025",
+        "role": "Frontend Developer"
+      },
+      {
+        "company": "MachinePortal",
+        "description": "Building e-commerce applications. Working with Vue.js v2.x, Vuex, JavaScript, Jest, Vuetify, Atomic Design, BEM.",
+        "period": "2023",
+        "role": "Frontend Developer"
+      },
+      {
+        "company": "Media4U",
+        "description": "Building e-commerce applications. Projects for brands such as Marilyn, Tatuum, Mastivo, Gabi.net, Varlesca, Alles, Cosmedica, Urbancity. Working with Vue.js, Vuex, jQuery, Twig, Bootstrap, Webpack.",
+        "period": "2022–2023",
+        "role": "Frontend Developer"
+      },
+      {
+        "company": "Wunderman Thompson",
+        "description": "Building web applications with React.js. Migrating a project from AngularJS to React.js. Working with JavaScript, jQuery, Jest, React Testing Library, Material UI, Styled Components, Webpack.",
+        "period": "2021–2022",
+        "role": "Frontend Developer"
+      },
+      {
+        "company": "BitBag",
+        "description": "Building websites based on Sylius CMS. Working with HTML5, Twig, CSS3, Scss, JavaScript ES6, jQuery, Semantic UI, Gulp, Webpack.",
+        "period": "2021",
+        "role": "Frontend Developer"
+      },
+      {
+        "company": "MyWorld",
+        "description": "Co-developing a portal for one of the largest e-commerce companies in Austria. Working with HTML5, CSS3, Sass, JavaScript ES6, jQuery, Bootstrap v4, Webpack, Thymeleaf.",
+        "period": "2019–2020",
+        "role": "Frontend Developer"
+      },
+      {
+        "company": "Avon",
+        "description": "Co-developing a portal for one of the largest multi-level marketing companies in cosmetics and personal care. Working with HTML5, CSS3, JavaScript ES6, jQuery, Bootstrap v3, WordPress.",
+        "period": "2018–2019",
+        "role": "Frontend Developer"
+      },
+      {
+        "company": "Efigence",
+        "description": "Delivering projects for major brands (Bank Pekao S.A., PLAY, Emirates NBD — Dubai business trip). Building websites with HTML5, CSS3, Sass, JavaScript, jQuery, Foundation, Gulp.js.",
+        "period": "2016–2018",
+        "role": "Frontend Developer"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "Marcin Gromek. All rights reserved."
   },
   "hero": {
-    "title": "Frontend Developer",
+    "cta": "View portfolio",
     "name": "Marcin Gromek",
     "subtitle": "Specializing in React, Next.js, Shopify, and WordPress",
-    "cta": "View portfolio"
+    "title": "Frontend Developer"
   },
-  "about": {
-    "heading": "About me",
-    "experience": "10+ years of experience in e-commerce & web development",
-    "description": "Frontend developer with a passion for building fast, responsive, and user-friendly web applications. I specialize in the React ecosystem and e-commerce platforms like Shopify and WordPress."
+  "nav": {
+    "contact": "Contact",
+    "home": "Home",
+    "portfolio": "Portfolio"
+  },
+  "portfolio": {
+    "agencyHighlights": "Key agency projects include collaborations with brands such as:",
+    "agencyProjects": "Agency Projects",
+    "description": "Selected projects from over 10 years of experience in e-commerce and web development",
+    "independentProjects": "Independent Projects",
+    "specialProjects": "Special Projects",
+    "title": "Portfolio",
+    "viewProject": "View project"
+  },
+  "projects": {
+    "heading": "Featured projects",
+    "highlights": [
+      {
+        "description": "YouTuber merchandise store on Shopify with TrustMate integration",
+        "tags": ["Shopify", "Liquid", "JavaScript"],
+        "title": "WojanShop.pl"
+      },
+      {
+        "description": "International e-commerce platform with multi-language support",
+        "tags": ["Shopify", "Liquid", "JavaScript"],
+        "title": "Miior7.com"
+      },
+      {
+        "description": "Coffee equipment store frontend redesign on Shopify",
+        "tags": ["Shopify", "Liquid", "CSS3"],
+        "title": "Bellman Espresso"
+      },
+      {
+        "description": "Custom video gallery and enhanced PDP functionality",
+        "tags": ["Shopify", "Liquid", "JavaScript"],
+        "title": "Desky"
+      }
+    ],
+    "viewAll": "View all projects"
   },
   "techStack": {
     "heading": "Tech stack",
@@ -27,134 +162,5 @@
       "Astro",
       "Node.js"
     ]
-  },
-  "projects": {
-    "heading": "Featured projects",
-    "viewAll": "View all projects",
-    "highlights": [
-      {
-        "title": "WojanShop.pl",
-        "description": "E-commerce store on Shopify with ERP integrations and custom theme",
-        "tags": ["Shopify", "Liquid", "JavaScript"]
-      },
-      {
-        "title": "Miior7.com",
-        "description": "International e-commerce platform with multi-language support",
-        "tags": ["Shopify", "React", "TypeScript"]
-      },
-      {
-        "title": "Bellman Espresso",
-        "description": "Product website with configurator and payment integration",
-        "tags": ["Next.js", "Shopify", "Tailwind CSS"]
-      },
-      {
-        "title": "Desky",
-        "description": "Custom video gallery and enhanced PDP functionality",
-        "tags": ["Shopify", "React", "Custom Apps"]
-      }
-    ]
-  },
-  "experience": {
-    "heading": "Experience",
-    "timeline": [
-      {
-        "company": "Desky",
-        "role": "Frontend Developer",
-        "period": "2025–present",
-        "description": "Developing and maintaining custom Shopify themes and apps for e-commerce clients. Implementing UI/UX solutions with Shopify Liquid, JS, HTML, CSS3."
-      },
-      {
-        "company": "Brand Active",
-        "role": "Frontend Developer",
-        "period": "2023–2025",
-        "description": "Building e-commerce applications using the Shopify ecosystem. Custom Shopify themes and apps. Working with Shopify Liquid, React.js, Remix.js, TypeScript, Tailwind CSS, Shopify Hydrogen, GraphQL."
-      },
-      {
-        "company": "MachinePortal",
-        "role": "Frontend Developer",
-        "period": "2023",
-        "description": "Building e-commerce applications. Working with Vue.js v2.x, Vuex, JavaScript, Jest, Vuetify, Atomic Design, BEM."
-      },
-      {
-        "company": "Media4U",
-        "role": "Frontend Developer",
-        "period": "2022–2023",
-        "description": "Building e-commerce applications. Projects for brands such as Marilyn, Tatuum, Mastivo, Gabi.net, Varlesca, Alles, Cosmedica, Urbancity. Working with Vue.js, Vuex, jQuery, Twig, Bootstrap, Webpack."
-      },
-      {
-        "company": "Wunderman Thompson",
-        "role": "Frontend Developer",
-        "period": "2021–2022",
-        "description": "Building web applications with React.js. Migrating a project from AngularJS to React.js. Working with JavaScript, jQuery, Jest, React Testing Library, Material UI, Styled Components, Webpack."
-      },
-      {
-        "company": "BitBag",
-        "role": "Frontend Developer",
-        "period": "2021",
-        "description": "Building websites based on Sylius CMS. Working with HTML5, Twig, CSS3, Scss, JavaScript ES6, jQuery, Semantic UI, Gulp, Webpack."
-      },
-      {
-        "company": "MyWorld",
-        "role": "Frontend Developer",
-        "period": "2019–2020",
-        "description": "Co-developing a portal for one of the largest e-commerce companies in Austria. Working with HTML5, CSS3, Sass, JavaScript ES6, jQuery, Bootstrap v4, Webpack, Thymeleaf."
-      },
-      {
-        "company": "Avon",
-        "role": "Frontend Developer",
-        "period": "2018–2019",
-        "description": "Co-developing a portal for one of the largest multi-level marketing companies in cosmetics and personal care. Working with HTML5, CSS3, JavaScript ES6, jQuery, Bootstrap v3, WordPress."
-      },
-      {
-        "company": "Efigence",
-        "role": "Frontend Developer",
-        "period": "2016–2018",
-        "description": "Delivering projects for major brands (Bank Pekao S.A., PLAY, Emirates NBD — Dubai business trip). Building websites with HTML5, CSS3, Sass, JavaScript, jQuery, Foundation, Gulp.js."
-      }
-    ]
-  },
-  "cta": {
-    "heading": "Interested in working together?",
-    "description": "Get in touch to discuss your project",
-    "button": "Contact me"
-  },
-  "portfolio": {
-    "title": "Portfolio",
-    "description": "Selected projects from over 10 years of experience in e-commerce and web development",
-    "independentProjects": "Independent Projects",
-    "agencyProjects": "Agency Projects",
-    "specialProjects": "Special Projects",
-    "viewProject": "View project",
-    "agencyHighlights": "Key agency projects include collaborations with brands such as:"
-  },
-  "footer": {
-    "copyright": "Marcin Gromek. All rights reserved."
-  },
-  "contact": {
-    "heading": "Contact",
-    "description": "Have a question or want to discuss a project? Contact me directly or fill out the contact form.",
-    "info": {
-      "heading": "Contact Information",
-      "email": "Email",
-      "phone": "Phone",
-      "social": "Social Media"
-    },
-    "form": {
-      "heading": "Contact Form",
-      "name": "Full name",
-      "namePlaceholder": "John Doe",
-      "nameRequired": "Full name is required",
-      "email": "Email address",
-      "emailPlaceholder": "john.doe@example.com",
-      "emailRequired": "Email address is required",
-      "emailInvalid": "Please enter a valid email address",
-      "message": "Message",
-      "messagePlaceholder": "Describe your project or ask a question...",
-      "messageRequired": "Message is required",
-      "submit": "Send message",
-      "submitting": "Sending...",
-      "success": "Thank you! Your message has been sent. I'll get back to you as soon as possible.",
-      "error": "An error occurred while sending the message. Please try again or contact me directly."
-    }
   }
 }

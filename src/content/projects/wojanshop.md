@@ -1,9 +1,9 @@
 ---
 title: "WojanShop"
-description: "Sklep internetowy z meblami i wyposażeniem wnętrz. Implementacja custom theme Shopify z zaawansowanymi funkcjami produktowymi."
-descriptionEn: "Furniture and interior design e-commerce store. Custom Shopify theme implementation with advanced product features."
+description: "Sklep z merchandisingiem youtuberskim. Implementacja custom theme Shopify z integracją TrustMate i migracją do Shopify."
+descriptionEn: "YouTuber merchandise e-commerce store. Custom Shopify theme implementation with TrustMate integration and Shopify migration."
 url: "https://wojanshop.pl"
-technologies: ["Shopify", "Liquid", "JavaScript", "SCSS", "Tailwind CSS"]
+technologies: ["Shopify", "Liquid", "JavaScript", "CSS3"]
 image: "/images/projects/placeholder.svg"
 category: "independent"
 featured: true
@@ -12,11 +12,11 @@ order: 1
 
 # WojanShop
 
-Sklep internetowy z meblami i wyposażeniem wnętrz. Projekt obejmował pełną implementację custom theme Shopify z responsywnym designem, zaawansowanymi filtrami produktów i optymalizacją SEO.
+Sklep z merchandisingiem youtuberskim Wojan Team — odzież, gadżety, artykuły szkolne, komiksy dla fanów. Projekt obejmował implementację custom theme Shopify z responsywnym designem i migracją do Shopify.
 
 ## Kluczowe funkcjonalności:
-- Custom theme Shopify z zero-JS overhead
-- Zaawansowane filtry produktów i wyszukiwanie
+- Frontend + RWD: Homepage, PLP, PDP, Koszyk
+- Integracja TrustMate
+- Dostosowanie treści PDP po migracji do Shopify
 - Responsywny design (mobile-first)
-- Optymalizacja Core Web Vitals
-- Integracja z systemem płatności
+- Custom Shopify theme
