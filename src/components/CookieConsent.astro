@@ -82,7 +82,7 @@ const t = translations[locale];
 
 <script is:inline>
   (function () {
-    var STORAGE_KEY = 'cookie-consent';
+    const STORAGE_KEY = 'cookie-consent';
 
     function getConsent() {
       try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
@@ -93,20 +93,20 @@ const t = translations[locale];
     }
 
     function init() {
-      var existing = getConsent();
+      const existing = getConsent();
       if (existing === 'accepted' || existing === 'rejected') return;
 
-      var bar = document.getElementById('cookie-consent-bar');
+      const bar = document.getElementById('cookie-consent-bar');
       if (!bar) return;
 
-      var acceptBtn = document.getElementById('cookie-consent-accept');
-      var rejectBtn = document.getElementById('cookie-consent-reject');
-      var dismissed = false;
+      const acceptBtn = document.getElementById('cookie-consent-accept');
+      const rejectBtn = document.getElementById('cookie-consent-reject');
+      let dismissed = false;
 
       bar.style.display = 'block';
 
-      requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
           bar.classList.add('is-visible');
         });
       });
@@ -121,20 +121,20 @@ const t = translations[locale];
         bar.classList.add('is-hidden');
         bar.addEventListener(
           'transitionend',
-          function () { bar.style.display = 'none'; },
+          () => { bar.style.display = 'none'; },
           { once: true }
         );
       }
 
       if (acceptBtn) {
-        acceptBtn.addEventListener('click', function () {
+        acceptBtn.addEventListener('click', () => {
           dismiss('accepted');
           document.dispatchEvent(new CustomEvent('cookie-consent-accepted'));
         });
       }
 
       if (rejectBtn) {
-        rejectBtn.addEventListener('click', function () {
+        rejectBtn.addEventListener('click', () => {
           dismiss('rejected');
         });
       }

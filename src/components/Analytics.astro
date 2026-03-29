@@ -1,18 +1,18 @@
 <script is:inline>
   (function () {
-    var GA_ID = 'G-WT3CP8NSDK';
-    var ga4Status = 'idle';
+    const GA_ID = 'G-WT3CP8NSDK';
+    let ga4Status = 'idle';
 
     function loadGA4() {
       if (ga4Status !== 'idle') return;
       ga4Status = 'loading';
 
-      var script = document.createElement('script');
+      const script = document.createElement('script');
       script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
       script.async = true;
       document.head.appendChild(script);
 
-      script.onload = function () {
+      script.onload = () => {
         ga4Status = 'loaded';
         window.dataLayer = window.dataLayer || [];
         function gtag() { window.dataLayer.push(arguments); }
@@ -21,7 +21,7 @@
         gtag('config', GA_ID);
       };
 
-      script.onerror = function () {
+      script.onerror = () => {
         ga4Status = 'idle';
       };
     }
@@ -42,7 +42,7 @@
       }
     } catch (e) {}
 
-    document.addEventListener('cookie-consent-accepted', function () {
+    document.addEventListener('cookie-consent-accepted', () => {
       scheduleGA4();
     });
   })();
