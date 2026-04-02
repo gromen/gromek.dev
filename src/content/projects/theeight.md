@@ -4,7 +4,7 @@ description: "Sklep e-commerce na platformie Shopify w planie Grow. Implementacj
 descriptionEn: "E-commerce store on Shopify Grow plan. Custom theme implementation using Liquid, CSS, and Shopify CLI."
 url: "https://theeight.pl"
 technologies: ["Shopify", "Liquid", "CSS3", "Shopify CLI"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/theeight-desktop.webp"
 category: "independent"
 featured: false
 order: 7

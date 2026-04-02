@@ -4,7 +4,7 @@ description: "Sklep e-commerce fashion brand. Aplikacja Vue.js na platformie Car
 descriptionEn: "Fashion brand e-commerce store. Vue.js application on Cartalo CMS with advanced sales features."
 url: "https://marilyn.pl"
 technologies: ["Vue.js", "JavaScript", "Pinia", "CSS3", "Cartalo CMS"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/marilyn-desktop.webp"
 category: "agency"
 featured: false
 order: 13

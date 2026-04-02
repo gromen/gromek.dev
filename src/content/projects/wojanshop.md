@@ -4,7 +4,7 @@ description: "Sklep z merchandisingiem youtuberskim. Implementacja custom theme 
 descriptionEn: "YouTuber merchandise e-commerce store. Custom Shopify theme implementation with TrustMate integration and Shopify migration."
 url: "https://wojanshop.pl"
 technologies: ["Shopify", "Liquid", "JavaScript", "CSS3"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/wojanshop-desktop.webp"
 category: "independent"
 featured: true
 order: 1

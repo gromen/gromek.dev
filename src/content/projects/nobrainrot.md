@@ -4,7 +4,7 @@ description: "Redesign strony produktowej Shift w oparciu o projekt Figma. Imple
 descriptionEn: "Product page redesign for Shift based on Figma design. RWD implementation using Liquid, HTML, CSS3, and JavaScript."
 url: "https://nobrainrot.com/products/shift"
 technologies: ["Liquid", "HTML5", "CSS3", "JavaScript"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/nobrainrot-desktop.webp"
 category: "independent"
 featured: false
 order: 8

@@ -4,7 +4,7 @@ description: "Strona wizytówka dla barbera — nowoczesny design z sekcją real
 descriptionEn: "Business card website for a barber — modern design with video reels section, delayed cookie consent for LCP optimization, GTM/GA4 integration, and dark mode."
 url: "https://parysbarber.pl"
 technologies: ["Astro", "Tailwind CSS", "Google Tag Manager", "GA4", "Cloudflare Pages"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/parysbarber-desktop.webp"
 category: "independent"
 featured: true
 order: -3

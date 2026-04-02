@@ -4,7 +4,7 @@ description: "Projekty dla jednego z największych banków w Polsce. Implementac
 descriptionEn: "Projects for one of Poland's largest banks. Implementation of comprehensive e-banking solutions with focus on security and UX."
 url: "https://www.pekao.com.pl"
 technologies: ["React", "TypeScript", "Redux", "Java", "Spring Boot", "Security"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/bank-pekao-desktop.webp"
 category: "agency"
 featured: true
 order: 10

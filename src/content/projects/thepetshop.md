@@ -13,7 +13,7 @@ technologies:
     "GraphQL",
     "Strapi CMS",
   ]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/thepetshop-desktop.webp"
 category: "independent"
 featured: false
 order: 4

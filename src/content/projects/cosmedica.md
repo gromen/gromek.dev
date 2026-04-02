@@ -4,7 +4,7 @@ description: "Sklep e-commerce z kosmetykami. Aplikacja Vue.js na platformie Car
 descriptionEn: "Beauty e-commerce store. Vue.js application on Cartalo CMS with custom features for beauty industry."
 url: "https://cosmedica.pl"
 technologies: ["Vue.js", "JavaScript", "Pinia", "CSS3", "Cartalo CMS"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/cosmedica-desktop.webp"
 category: "agency"
 featured: false
 order: 15
@@ -15,6 +15,7 @@ order: 15
 Sklep e-commerce z kosmetykami. Aplikacja Vue.js na platformie Cartalo CMS z custom features dedykowanymi dla beauty industry.
 
 ## Zakres prac:
+
 - Aplikacja Vue.js z Pinia (state management)
 - Product recommendation engine
 - Skin type quiz integration

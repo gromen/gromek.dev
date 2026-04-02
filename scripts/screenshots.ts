@@ -1,4 +1,5 @@
 import { chromium } from '@playwright/test';
+import sharp from 'sharp';
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -7,6 +8,10 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
+
+// Output dimensions for portfolio card (16:9)
+const OUTPUT_WIDTH = 800;
+const OUTPUT_HEIGHT = 450;
 
 interface ProjectData {
   slug: string;
@@ -42,16 +47,66 @@ async function getProjects(): Promise<ProjectData[]> {
   return projects;
 }
 
+async function acceptCookies(page: import('@playwright/test').Page): Promise<void> {
+  const selectors = [
+    // Button text
+    'button:has-text("Accept all")',
+    'button:has-text("Accept All")',
+    'button:has-text("Accept cookies")',
+    'button:has-text("Akceptuję")',
+    'button:has-text("Akceptuj wszystkie")',
+    'button:has-text("Akceptuj")',
+    'button:has-text("Zgadzam się")',
+    'button:has-text("OK")',
+    'button:has-text("Got it")',
+    'button:has-text("I agree")',
+    'button:has-text("Allow all")',
+    'button:has-text("Allow cookies")',
+    // Popular IDs/classes
+    '#onetrust-accept-btn-handler',
+    '#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll',
+    '.cookie-accept',
+    '[data-cookiebanner="accept_button"]',
+    '[aria-label="Accept cookies"]',
+    '[aria-label="Akceptuj cookies"]',
+  ];
+
+  for (const selector of selectors) {
+    try {
+      const btn = page.locator(selector).first();
+      if (await btn.isVisible({ timeout: 500 })) {
+        await btn.click();
+        return;
+      }
+    } catch {
+      // not found, try next
+    }
+  }
+}
+
+async function optimizeToWebP(inputPath: string, outputPath: string): Promise<void> {
+  await sharp(inputPath)
+    .resize(OUTPUT_WIDTH, OUTPUT_HEIGHT, {
+      fit: 'cover',
+      position: 'top',
+    })
+    .webp({ quality: 85 })
+    .toFile(outputPath);
+
+  await fs.unlink(inputPath);
+}
+
 async function takeScreenshot(
+  browser: import('@playwright/test').Browser,
   url: string,
-  outputPath: string,
+  slug: string,
+  outputDir: string,
   width: number,
   height: number,
   deviceType: 'desktop' | 'mobile'
 ): Promise<void> {
   console.log(`  Taking ${deviceType} screenshot (${width}x${height})...`);
 
-  const browser = await chromium.launch();
   const context = await browser.newContext({
     viewport: { width, height },
     userAgent: deviceType === 'mobile'
@@ -60,30 +115,40 @@ async function takeScreenshot(
   });
 
   const page = await context.newPage();
+  const tmpPath = path.join(outputDir, `${slug}-${deviceType}-tmp.png`);
+  const webpPath = path.join(outputDir, `${slug}-${deviceType}.webp`);
 
   try {
-    // Navigate to URL with timeout
     await page.goto(url, {
       waitUntil: 'networkidle',
       timeout: 30000
     });
 
-    // Wait a bit for any animations/lazy loading
-    await page.waitForTimeout(2000);
+    await acceptCookies(page);
 
-    // Take full-page screenshot
+    // Scroll back to top (some sites scroll on load or after cookie accept)
+    await page.evaluate(() => window.scrollTo(0, 0));
+
+    await page.waitForTimeout(500);
+
+    // Above-the-fold only (viewport screenshot, no fullPage)
     await page.screenshot({
-      path: outputPath,
-      fullPage: true,
+      path: tmpPath,
       animations: 'disabled'
     });
 
-    console.log(`  Saved to ${path.basename(outputPath)}`);
+    // Resize to 800x450 and convert to WebP
+    await optimizeToWebP(tmpPath, webpPath);
+
+    const stat = await fs.stat(webpPath);
+    console.log(`  Saved ${slug}-${deviceType}.webp (${Math.round(stat.size / 1024)}KB)`);
   } catch (error) {
+    // Clean up tmp file if it exists
+    await fs.unlink(tmpPath).catch(() => {});
     console.error(`  Failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
     throw error;
   } finally {
-    await browser.close();
+    await context.close();
   }
 }
 
@@ -98,11 +163,9 @@ async function ensureDirectory(dirPath: string): Promise<void> {
 async function main() {
   console.log('Starting screenshot automation...\n');
 
-  // Ensure output directory exists
   const outputDir = path.join(projectRoot, 'public/images/projects');
   await ensureDirectory(outputDir);
 
-  // Get all projects
   const projects = await getProjects();
   console.log(`Found ${projects.length} projects\n`);
 
@@ -110,20 +173,15 @@ async function main() {
   let failedCount = 0;
   const failed: string[] = [];
 
-  // Process each project
+  const browser = await chromium.launch();
+
   for (const project of projects) {
     console.log(`\nProcessing: ${project.title}`);
     console.log(`  URL: ${project.url}`);
 
     try {
-      // Desktop screenshot (1440px width)
-      const desktopPath = path.join(outputDir, `${project.slug}-desktop.png`);
-      await takeScreenshot(project.url, desktopPath, 1440, 900, 'desktop');
-
-      // Mobile screenshot (375px width)
-      const mobilePath = path.join(outputDir, `${project.slug}-mobile.png`);
-      await takeScreenshot(project.url, mobilePath, 375, 667, 'mobile');
-
+      await takeScreenshot(browser, project.url, project.slug, outputDir, 1440, 900, 'desktop');
+      await takeScreenshot(browser, project.url, project.slug, outputDir, 375, 667, 'mobile');
       successCount += 2;
     } catch (error) {
       console.error(`\nFailed to capture ${project.title}`);
@@ -132,7 +190,8 @@ async function main() {
     }
   }
 
-  // Summary
+  await browser.close();
+
   console.log('\n' + '='.repeat(60));
   console.log('SUMMARY');
   console.log('='.repeat(60));
@@ -143,8 +202,7 @@ async function main() {
     console.log(`\nFailed projects: ${failed.join(', ')}`);
   }
 
-  console.log('\nScreenshot automation completed!');
-  console.log(`Screenshots saved to: ${outputDir}`);
+  console.log('\nDone! Screenshots saved to:', outputDir);
 }
 
 main().catch((error) => {

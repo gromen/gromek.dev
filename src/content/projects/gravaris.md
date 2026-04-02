@@ -4,7 +4,7 @@ description: "Strona firmowa dla specjalisty od robót ziemnych i wykopów staw�
 descriptionEn: "Company website for an earthworks and pond excavation specialist. Modern, minimalist design with project gallery and responsive layout."
 url: "https://gravaris.pl"
 technologies: ["Astro", "CSS3", "JavaScript", "Netlify"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/gravaris-desktop.webp"
 category: "independent"
 featured: true
 order: -2

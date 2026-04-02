@@ -4,7 +4,7 @@ description: "Premium fashion e-commerce. Aplikacja Vue.js na platformie Cartalo
 descriptionEn: "Premium fashion e-commerce. Vue.js application on Cartalo CMS with focus on brand experience and high-quality product presentation."
 url: "https://tatuum.pl"
 technologies: ["Vue.js", "JavaScript", "Pinia", "CSS3", "Cartalo CMS"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/tatuum-desktop.webp"
 category: "agency"
 featured: false
 order: 14

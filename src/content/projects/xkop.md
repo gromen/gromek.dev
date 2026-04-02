@@ -4,7 +4,7 @@ description: "Strona firmowa dla wykonawcy robót ziemnych i hydrotechnicznych z
 descriptionEn: "Company website for an earthworks and hydrotechnical contractor with 15+ years of experience. Elegant dark design with a portfolio of 23 completed projects."
 url: "https://xkop.com.pl"
 technologies: ["Astro", "CSS3", "JavaScript", "Netlify"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/xkop-desktop.webp"
 category: "independent"
 featured: true
 order: -1

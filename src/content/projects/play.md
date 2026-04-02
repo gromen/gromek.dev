@@ -4,7 +4,7 @@ description: "Projekty dla operatora telekomunikacyjnego PLAY. Frontend developm
 descriptionEn: "Projects for PLAY telecom operator. Frontend development for customer portal and e-commerce solutions."
 url: "https://www.play.pl"
 technologies: ["React", "TypeScript", "Next.js", "Node.js", "REST APIs"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/play-desktop.webp"
 category: "agency"
 featured: true
 order: 12

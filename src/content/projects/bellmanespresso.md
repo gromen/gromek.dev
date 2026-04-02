@@ -4,7 +4,7 @@ description: "Sklep e-commerce z profesjonalnym sprzętem do kawy. Redesign fron
 descriptionEn: "Professional coffee equipment e-commerce store. Frontend redesign on Shopify with Stamped Reviews integration."
 url: "https://bellmanespresso.com"
 technologies: ["Shopify", "Liquid", "JavaScript", "CSS3"]
-image: "/images/projects/placeholder.svg"
+image: "/images/projects/bellmanespresso-desktop.webp"
 category: "independent"
 featured: true
 order: 3
