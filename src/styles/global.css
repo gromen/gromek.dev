@@ -14,17 +14,62 @@
   :root {
     --text: 13.09% 0.037 272.57;
     --background: 94.79% 0.019 276.34;
-    --primary: 33.06% 0.140 267.90;
-    --secondary: 72.47% 0.180 323.38;
-    --accent: 56.44% 0.224 338.00;
+    --primary: 33.06% 0.14 267.9;
+    --secondary: 72.47% 0.18 323.38;
+    --accent: 56.44% 0.224 338;
   }
   .dark {
-    --text: 94.52% 0.020 276.95;
+    --text: 94.52% 0.02 276.95;
     --background: 13.38% 0.032 269.08;
     --primary: 68.99% 0.123 273.38;
     --secondary: 42.64% 0.179 323.38;
-    --accent: 63.35% 0.230 337.17;
+    --accent: 63.35% 0.23 337.17;
   }
+}
+
+/* Mesh gradient background */
+body {
+  background-image:
+    radial-gradient(
+      ellipse 80% 60% at 15% 10%,
+      oklch(var(--primary) / 0.25) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 85% 20%,
+      oklch(var(--secondary) / 0.12) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 65% 55% at 5% 70%,
+      oklch(var(--secondary) / 0.1) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 55% 55% at 90% 85%,
+      oklch(var(--accent) / 0.12) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 80% 50% at 50% 50%,
+      oklch(var(--primary) / 0.05) 0%,
+      transparent 70%
+    );
+  background-attachment: fixed;
+}
+
+/* Gradient headings */
+h1 {
+  background-image: linear-gradient(
+    135deg,
+    oklch(var(--primary)) 0%,
+    oklch(var(--secondary)) 75%,
+    oklch(var(--accent)) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 /* Performance optimizations */

@@ -1,24 +1,22 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Navigation from '../components/Navigation.astro';
+import ExperienceTimeline from '../components/ExperienceTimeline.astro';
 import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
+import Navigation from '../components/Navigation.astro';
 import SkillBadge from '../components/SkillBadge.astro';
-import ExperienceTimeline from '../components/ExperienceTimeline.astro';
 import { getTranslations } from '../i18n/utils';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const t = getTranslations('pl');
-const title = `${t.hero.name} — ${t.hero.title}`;
 ---
 
-<BaseLayout title={title} locale="pl">
+<BaseLayout title={t.hero.name} locale="pl">
     <Navigation locale="pl" currentPath="/" />
 
     <main id="main-content" class="flex-1">
       <!-- Hero Section -->
       <Hero
         locale="pl"
-        title={title}
         subtitle={t.hero.subtitle}
         ctaText={t.hero.cta}
         ctaHref="/portfolio"
