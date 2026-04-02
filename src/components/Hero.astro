@@ -18,16 +18,15 @@ const { locale, title, subtitle, ctaText, ctaHref } = Astro.props;
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
         {title}
       </h1>
-      <p class="mt-6 text-xl sm:text-2xl text-gray-600 dark:text-gray-300">
+      <p class="mt-6 text-xl sm:text-2xl text-text/70">
         {subtitle}
       </p>
       <div class="mt-10">
         <a
           href={ctaHref}
           class="inline-flex items-center px-6 py-3 text-base font-medium rounded-lg
-                 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600
-                 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500
-                 dark:focus:ring-offset-gray-900"
+                 bg-primary text-white hover:bg-primary/90
+                 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
         >
           {ctaText}
           <svg

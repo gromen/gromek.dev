@@ -10,9 +10,9 @@ interface Props {
 const { title, description, url, technologies, image } = Astro.props;
 ---
 
-<article class="group bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+<article class="group bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
   <a href={url} target="_blank" rel="noopener noreferrer" class="block">
-    <div class="aspect-video bg-gray-200 dark:bg-gray-700 relative overflow-hidden">
+    <div class="aspect-video bg-text/10 relative overflow-hidden">
       <img
         src={image}
         srcset={`${image.replace('-desktop', '-mobile')} 375w, ${image} 800w`}
@@ -27,23 +27,23 @@ const { title, description, url, technologies, image } = Astro.props;
     </div>
 
     <div class="p-6">
-      <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+      <h3 class="text-xl font-bold text-text mb-2 group-hover:text-primary transition-colors">
         {title}
       </h3>
 
-      <p class="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">
+      <p class="text-text/60 mb-4 line-clamp-3">
         {description}
       </p>
 
       <div class="flex flex-wrap gap-2">
         {technologies.map((tech) => (
-          <span class="px-3 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full">
+          <span class="px-3 py-1 text-xs font-medium bg-text/10 text-text/70 rounded-full">
             {tech}
           </span>
         ))}
       </div>
 
-      <div class="mt-4 flex items-center text-blue-600 dark:text-blue-400 font-medium">
+      <div class="mt-4 flex items-center text-primary font-medium">
         <span class="group-hover:mr-2 transition-all">View project</span>
         <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>

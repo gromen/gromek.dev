@@ -33,11 +33,11 @@ const t = translations[locale];
   aria-label={locale === 'pl' ? 'Zgoda na pliki cookies' : 'Cookie consent'}
   aria-live="polite"
   style="display:none;will-change:transform"
-  class="fixed bottom-0 left-0 right-0 z-50 border-t border-gray-200/60 dark:border-gray-700/60 bg-white/85 dark:bg-gray-900/85 backdrop-blur-md"
+  class="fixed bottom-0 left-0 right-0 z-50 border-t border-text/10 bg-background/85 backdrop-blur-md"
 >
   <div class="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
     <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-      <p class="text-sm text-gray-700 dark:text-gray-300">
+      <p class="text-sm text-text/70">
         {t.message}{' '}
         <a
           href={t.privacyPolicyHref}
@@ -50,14 +50,14 @@ const t = translations[locale];
         <button
           id="cookie-consent-reject"
           type="button"
-          class="rounded-md border border-gray-300 dark:border-gray-600 bg-transparent px-3 py-1.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-colors duration-150"
+          class="rounded-md border border-text/10 bg-transparent px-3 py-1.5 text-sm font-medium text-text/70 hover:bg-text/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors duration-150"
         >
           {t.reject}
         </button>
         <button
           id="cookie-consent-accept"
           type="button"
-          class="rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700 dark:hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-colors duration-150"
+          class="rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-white hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors duration-150"
         >
           {t.accept}
         </button>
