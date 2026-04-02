@@ -113,7 +113,8 @@
   "nav": {
     "contact": "Kontakt",
     "home": "Start",
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+    "services": "Usługi"
   },
   "portfolio": {
     "agencyHighlights": "Najważniejsze projekty agencyjne obejmują współpracę z markami takimi jak:",
@@ -161,6 +162,38 @@
       "WordPress",
       "Astro",
       "Node.js"
+    ]
+  },
+  "services": {
+    "title": "Usługi",
+    "description": "Oferuję szeroki zakres usług graficznych i wideo — od montażu filmów po projektowanie identyfikacji wizualnej.",
+    "cta": "Skontaktuj się",
+    "ctaHeading": "Zainteresowany?",
+    "items": [
+      {
+        "title": "Montaż wideo",
+        "description": "Składanie filmów ze zdjęć i materiałów wideo. Tworzenie spójnych produkcji z muzyką, napisami i efektami."
+      },
+      {
+        "title": "Obróbka grafiki rastrowej",
+        "description": "Retusz i edycja zdjęć, wycinanie obiektów z tła, korekcja kolorów i przygotowanie grafiki do publikacji online i druku."
+      },
+      {
+        "title": "Grafika wektorowa",
+        "description": "Tworzenie i edycja grafiki wektorowej w formatach SVG, AI, EPS. Skalowalne pliki gotowe do użycia w każdym rozmiarze."
+      },
+      {
+        "title": "Projektowanie logo",
+        "description": "Generowanie i projektowanie logotypów w formacie wektorowym. Czysty, profesjonalny design gotowy do druku i publikacji online."
+      },
+      {
+        "title": "Wizytówki",
+        "description": "Projektowanie dwustronnych wizytówek zgodnie z wytycznymi marki. Pliki gotowe do druku w rozdzielczości 300 DPI."
+      },
+      {
+        "title": "Bannery reklamowe",
+        "description": "Projektowanie bannerów reklamowych na potrzeby kampanii online i offline. Animowane i statyczne formaty dostosowane do specyfikacji platformy."
+      }
     ]
   }
 }

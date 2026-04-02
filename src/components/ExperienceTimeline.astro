@@ -32,7 +32,7 @@ const experiences: Experience[] = t.experience.timeline;
         aria-hidden="true"
       ></div>
 
-      <ul class="space-y-8 sm:space-y-12">
+      <ol reversed class="space-y-8 sm:space-y-12">
         {experiences.map((exp, index) => (
           <li class="relative">
             <!-- Timeline dot - hidden on mobile, visible from sm breakpoint -->
@@ -63,7 +63,7 @@ const experiences: Experience[] = t.experience.timeline;
             </div>
           </li>
         ))}
-      </ul>
+      </ol>
     </div>
   </div>
 </section>

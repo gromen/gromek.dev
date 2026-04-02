@@ -15,7 +15,7 @@ const allProjects = (await getCollection('projects'))
 
 <BaseLayout title={title} description={t.portfolio.description} locale="pl">
     <Navigation locale="pl" currentPath="/portfolio" />
-    <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main id="main-content" class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <header class="mb-12">
         <h1 class="text-4xl md:text-5xl font-bold text-text mb-4">
           {t.portfolio.title}

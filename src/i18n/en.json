@@ -113,7 +113,8 @@
   "nav": {
     "contact": "Contact",
     "home": "Home",
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+    "services": "Services"
   },
   "portfolio": {
     "agencyHighlights": "Key agency projects include collaborations with brands such as:",
@@ -161,6 +162,38 @@
       "WordPress",
       "Astro",
       "Node.js"
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "description": "I offer a wide range of graphic and video services — from video editing to visual identity design.",
+    "cta": "Get in touch",
+    "ctaHeading": "Interested?",
+    "items": [
+      {
+        "title": "Video editing",
+        "description": "Compositing videos from photos and footage. Creating cohesive productions with music, subtitles, and effects."
+      },
+      {
+        "title": "Raster graphics editing",
+        "description": "Photo retouching and editing, background removal, color correction, and preparing graphics for online publishing and print."
+      },
+      {
+        "title": "Vector graphics",
+        "description": "Creating and editing vector graphics in SVG, AI, EPS formats. Scalable files ready for use at any size."
+      },
+      {
+        "title": "Logo design",
+        "description": "Generating and designing logotypes in vector format. Clean, professional design ready for print and online publishing."
+      },
+      {
+        "title": "Business cards",
+        "description": "Designing double-sided business cards following brand guidelines. Print-ready files at 300 DPI resolution."
+      },
+      {
+        "title": "Advertising banners",
+        "description": "Designing advertising banners for online and offline campaigns. Animated and static formats tailored to platform specifications."
+      }
     ]
   }
 }

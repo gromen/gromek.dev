@@ -2,6 +2,31 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --color-text: oklch(var(--text));
+  --color-background: oklch(var(--background));
+  --color-primary: oklch(var(--primary));
+  --color-secondary: oklch(var(--secondary));
+  --color-accent: oklch(var(--accent));
+}
+
+@layer base {
+  :root {
+    --text: 13.09% 0.037 272.57;
+    --background: 94.79% 0.019 276.34;
+    --primary: 33.06% 0.140 267.90;
+    --secondary: 72.47% 0.180 323.38;
+    --accent: 56.44% 0.224 338.00;
+  }
+  .dark {
+    --text: 94.52% 0.020 276.95;
+    --background: 13.38% 0.032 269.08;
+    --primary: 68.99% 0.123 273.38;
+    --secondary: 42.64% 0.179 323.38;
+    --accent: 63.35% 0.230 337.17;
+  }
+}
+
 /* Performance optimizations */
 * {
   -webkit-font-smoothing: antialiased;
@@ -14,7 +39,7 @@ html {
 
 /* Accessibility: Focus visible for keyboard navigation */
 :focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid oklch(var(--primary));
   outline-offset: 2px;
 }
 
