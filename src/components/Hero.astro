@@ -16,13 +16,13 @@ const t = getTranslations(locale);
 <section class="relative py-20 md:py-32">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight flex flex-col items-center justify-center gap-2">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight flex flex-col items-center justify-center gap-2 motion-safe:animate-fade-up">
         <span class="text-primary">{t.hero.name}</span>  <span class="text-secondary">{t.hero.title}</span>
       </h1>
-      <p class="mt-6 text-xl sm:text-2xl text-text/70">
+      <p class="mt-6 text-xl sm:text-2xl text-text/70 motion-safe:animate-fade-up motion-safe:[animation-delay:200ms]">
         {subtitle}
       </p>
-      <div class="mt-10">
+      <div class="mt-10 motion-safe:animate-fade-up motion-safe:[animation-delay:400ms]">
         <a
           href={ctaHref}
           class="inline-flex items-center px-6 py-3 text-base font-medium rounded-lg

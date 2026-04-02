@@ -10,8 +10,8 @@ interface Props {
 const { title, description, url, technologies, image } = Astro.props;
 ---
 
-<article class="group bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-  <a href={url} target="_blank" rel="noopener noreferrer" class="block">
+<article class="group bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 motion-safe:hover:-translate-y-1 motion-safe:transition-transform motion-safe:duration-200">
+  <a href={url} target="_blank" rel="noopener noreferrer" class="block active:scale-[0.99]">
     <div class="aspect-video bg-text/10 relative overflow-hidden">
       <img
         src={image}
