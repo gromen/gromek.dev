@@ -166,10 +166,30 @@
   },
   "services": {
     "title": "Services",
-    "description": "I offer a wide range of graphic and video services — from video editing to visual identity design.",
+    "description": "I build websites and online stores — from simple landing pages to full-scale web applications. I also specialise in page speed optimisation and Core Web Vitals.",
     "cta": "Get in touch",
     "ctaHeading": "Interested?",
     "items": [
+      {
+        "title": "WordPress / WooCommerce",
+        "description": "Business websites, blogs, and online stores. Theme customisation, troubleshooting, and speeding up slow WordPress installs. References: nellijewels.com."
+      },
+      {
+        "title": "Shopify",
+        "description": "Professional stores with custom themes, payment and courier integrations, Baselinker. References: theeight.pl, Desky.com, WojanShop.pl, MIIOR7.com, Bellman Espresso."
+      },
+      {
+        "title": "React / Next.js / Vue.js",
+        "description": "Modern web applications. Projects for Bank Pekao S.A., Emirates NBD, PLAY operator (React), Marilyn, Tatuum, Cosmedica, Mastivo brands (Vue.js)."
+      },
+      {
+        "title": "Landing Pages (Astro)",
+        "description": "Lightweight, ultra-fast websites for service businesses. Perfect for tradespeople, contractors, and local businesses. References: gravaris.pl, xkop.com.pl, parysbarber.pl."
+      },
+      {
+        "title": "Web Vitals Optimisation",
+        "description": "Improving Core Web Vitals, faster load times, better Google rankings. WordPress, Shopify, Magento, Shoper — any platform."
+      },
       {
         "title": "Video editing",
         "description": "Compositing videos from photos and footage. Creating cohesive productions with music, subtitles, and effects."

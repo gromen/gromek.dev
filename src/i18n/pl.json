@@ -166,10 +166,30 @@
   },
   "services": {
     "title": "Usługi",
-    "description": "Oferuję szeroki zakres usług graficznych i wideo — od montażu filmów po projektowanie identyfikacji wizualnej.",
+    "description": "Tworzę strony internetowe i sklepy online — od prostych stron wizytówek po rozbudowane aplikacje webowe. Specjalizuję się również w optymalizacji szybkości ładowania i Core Web Vitals.",
     "cta": "Skontaktuj się",
     "ctaHeading": "Zainteresowany?",
     "items": [
+      {
+        "title": "WordPress / WooCommerce",
+        "description": "Strony firmowe, blogi, sklepy online. Modyfikacje motywów, naprawianie problemów, przyspieszanie wolnych WordPressów. Realizacje: nellijewels.com."
+      },
+      {
+        "title": "Shopify",
+        "description": "Profesjonalne sklepy z custom motywami, integracjami z płatnościami, kurierami, Baselinker. Realizacje: theeight.pl, Desky.com, WojanShop.pl, MIIOR7.com, Bellman Espresso."
+      },
+      {
+        "title": "React / Next.js / Vue.js",
+        "description": "Nowoczesne aplikacje webowe. Projekty dla Banku Pekao S.A., Emirates NBD, operatora PLAY (React), marki Marilyn, Tatuum, Cosmedica, Mastivo (Vue.js)."
+      },
+      {
+        "title": "Strony wizytówki (Astro)",
+        "description": "Lekkie, superszybkie strony dla firm usługowych. Idealne dla rzemieślników, budowlańców, lokalnych biznesów. Realizacje: gravaris.pl, xkop.com.pl, parysbarber.pl."
+      },
+      {
+        "title": "Optymalizacja Web Vitals",
+        "description": "Poprawa Core Web Vitals, przyspieszenie działania, lepsze pozycje w Google. WordPress, Shopify, Magento, Shoper — każda platforma."
+      },
       {
         "title": "Montaż wideo",
         "description": "Składanie filmów ze zdjęć i materiałów wideo. Tworzenie spójnych produkcji z muzyką, napisami i efektami."
