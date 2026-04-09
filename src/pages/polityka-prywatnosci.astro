@@ -1,0 +1,112 @@
+---
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = `Polityka prywatności — Marcin Gromek`;
+const description = 'Polityka prywatności serwisu gromek.dev — informacje o przetwarzaniu danych osobowych i plikach cookies zgodnie z RODO.';
+const lastUpdated = '9 kwietnia 2026';
+---
+
+<BaseLayout title={title} description={description} locale="pl">
+  <Navigation locale="pl" currentPath="/polityka-prywatnosci" />
+  <main id="main-content" class="flex-1 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">Polityka prywatności</h1>
+    <p class="mt-4 text-sm text-text/50">Ostatnia aktualizacja: {lastUpdated}</p>
+
+    <div class="prose-custom mt-10 space-y-8 text-text/80 leading-relaxed">
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">1. Administrator danych</h2>
+        <p>
+          Administratorem danych osobowych zbieranych za pośrednictwem strony <strong>gromek.dev</strong> jest
+          <strong> Marcin Gromek</strong>, prowadzący jednoosobową działalność gospodarczą (Frontend Developer).
+        </p>
+        <p class="mt-2">Dane administratora:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>Adres: pl. Sobotki 4 lok. 3, 07-300 Ostrów Mazowiecka</li>
+          <li>NIP: 7591634940</li>
+          <li>E-mail: <a href="mailto:gromek.marcin@outlook.com" class="text-primary hover:underline">gromek.marcin@outlook.com</a></li>
+          <li>Telefon: <a href="tel:+48666211109" class="text-primary hover:underline">+48 666 211 109</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">2. Zakres zbieranych danych</h2>
+        <p>Strona gromek.dev jest stroną wizytówkową i <strong>nie posiada formularzy kontaktowych, rejestracji ani kont użytkowników</strong>. W związku z korzystaniem ze strony mogą być przetwarzane następujące dane:</p>
+        <ul class="list-disc pl-6 mt-3 space-y-2">
+          <li><strong>Dane techniczne</strong> — adres IP, typ i wersja przeglądarki, system operacyjny, typ urządzenia, rozdzielczość ekranu, język, strona odsyłająca (referrer), data i godzina wizyty. Dane te są rejestrowane automatycznie przez serwer hostingu (Netlify) oraz — po wyrażeniu zgody — przez Google Analytics.</li>
+          <li><strong>Dane z kontaktu bezpośredniego</strong> — jeśli samodzielnie wyślesz wiadomość e-mail lub zadzwonisz na podane numery, przetwarzane będą dane, które sam(a) zdecydujesz się przekazać (imię, adres e-mail, treść wiadomości itp.).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">3. Cele i podstawy prawne przetwarzania</h2>
+        <p>Dane przetwarzane są w następujących celach i na następujących podstawach prawnych (zgodnie z RODO):</p>
+        <ul class="list-disc pl-6 mt-3 space-y-2">
+          <li><strong>Zapewnienie działania i bezpieczeństwa strony</strong> — art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora).</li>
+          <li><strong>Analityka i statystyki (Google Analytics 4)</strong> — art. 6 ust. 1 lit. a RODO (zgoda wyrażona poprzez banner cookies).</li>
+          <li><strong>Obsługa zapytań przesyłanych e-mailem lub telefonicznie</strong> — art. 6 ust. 1 lit. b RODO (działania przed zawarciem umowy) oraz art. 6 ust. 1 lit. f RODO.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">4. Pliki cookies</h2>
+        <p>Strona wykorzystuje pliki cookies (małe pliki tekstowe zapisywane w przeglądarce) w dwóch kategoriach:</p>
+        <ul class="list-disc pl-6 mt-3 space-y-2">
+          <li>
+            <strong>Niezbędne</strong> — wymagane do prawidłowego działania strony (np. zapamiętanie Twojej decyzji w sprawie cookies, preferencji motywu jasnego/ciemnego). Przechowywane w <code>localStorage</code> przeglądarki. Nie wymagają zgody.
+          </li>
+          <li>
+            <strong>Analityczne (Google Analytics 4)</strong> — ładowane <strong>wyłącznie po wyrażeniu zgody</strong> w bannerze cookies. Służą do anonimowego mierzenia ruchu i sposobu korzystania ze strony. Identyfikator pomiaru: <code>G-WT3CP8NSDK</code>.
+          </li>
+        </ul>
+        <p class="mt-3">W każdej chwili możesz wycofać zgodę, czyszcząc dane strony w przeglądarce — banner pojawi się ponownie przy następnej wizycie. Większość przeglądarek umożliwia też globalne zarządzanie cookies w ustawieniach.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">5. Odbiorcy danych</h2>
+        <p>Dane mogą być przekazywane następującym podmiotom przetwarzającym:</p>
+        <ul class="list-disc pl-6 mt-3 space-y-2">
+          <li><strong>Netlify, Inc.</strong> — dostawca hostingu strony (logi serwera).</li>
+          <li><strong>Google Ireland Limited / Google LLC</strong> — dostawca usługi Google Analytics 4 (tylko po wyrażeniu zgody). Może to wiązać się z transferem danych poza EOG — Google zapewnia odpowiednie zabezpieczenia zgodnie z Standardowymi Klauzulami Umownymi.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">6. Okres przechowywania danych</h2>
+        <ul class="list-disc pl-6 mt-3 space-y-2">
+          <li>Logi serwera — zgodnie z polityką Netlify (zwykle do 30 dni).</li>
+          <li>Dane Google Analytics — zgodnie z ustawieniami konta, maksymalnie 14 miesięcy.</li>
+          <li>Korespondencja e-mail i dane z niej wynikające — przez okres niezbędny do udzielenia odpowiedzi oraz ewentualnej realizacji współpracy, a następnie do czasu przedawnienia roszczeń.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">7. Twoje prawa</h2>
+        <p>Zgodnie z RODO przysługują Ci następujące prawa:</p>
+        <ul class="list-disc pl-6 mt-3 space-y-1">
+          <li>prawo dostępu do danych oraz otrzymania ich kopii,</li>
+          <li>prawo do sprostowania (poprawiania) danych,</li>
+          <li>prawo do usunięcia danych („prawo do bycia zapomnianym"),</li>
+          <li>prawo do ograniczenia przetwarzania,</li>
+          <li>prawo do przenoszenia danych,</li>
+          <li>prawo do wniesienia sprzeciwu wobec przetwarzania,</li>
+          <li>prawo do cofnięcia zgody w dowolnym momencie (bez wpływu na zgodność z prawem przetwarzania dokonanego przed cofnięciem),</li>
+          <li>prawo do wniesienia skargi do organu nadzorczego — <strong>Prezesa Urzędu Ochrony Danych Osobowych</strong> (uodo.gov.pl).</li>
+        </ul>
+        <p class="mt-3">W celu skorzystania z powyższych praw skontaktuj się e-mailowo: <a href="mailto:gromek.marcin@outlook.com" class="text-primary hover:underline">gromek.marcin@outlook.com</a>.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">8. Linki do serwisów zewnętrznych</h2>
+        <p>Strona zawiera linki do zewnętrznych serwisów (LinkedIn, GitHub). Administrator nie ponosi odpowiedzialności za zasady prywatności obowiązujące w tych serwisach — zachęcam do zapoznania się z nimi bezpośrednio.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">9. Zmiany polityki prywatności</h2>
+        <p>Niniejsza polityka może być aktualizowana. Data ostatniej aktualizacji jest widoczna na górze strony. W przypadku istotnych zmian informacja zostanie umieszczona w widocznym miejscu.</p>
+      </section>
+    </div>
+  </main>
+  <Footer locale="pl" />
+</BaseLayout>

@@ -102,7 +102,9 @@
     ]
   },
   "footer": {
-    "copyright": "Marcin Gromek. Wszystkie prawa zastrzeżone."
+    "copyright": "Marcin Gromek. Wszystkie prawa zastrzeżone.",
+    "privacyPolicy": "Polityka prywatności",
+    "privacyPolicyHref": "/polityka-prywatnosci"
   },
   "hero": {
     "cta": "Zobacz portfolio",

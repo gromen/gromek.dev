@@ -20,10 +20,16 @@ const socials = [
 
 <footer class="bg-background border-t border-text/10 mt-auto">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-      <p class="text-sm text-text/60">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
+      <p class="text-sm text-text/60 text-center md:text-left">
         © {currentYear} {t.footer.copyright}
       </p>
+      <a
+        href={t.footer.privacyPolicyHref}
+        class="text-sm text-text/60 hover:text-text underline underline-offset-2 decoration-text/20 hover:decoration-text transition-colors"
+      >
+        {t.footer.privacyPolicy}
+      </a>
       <div class="flex space-x-6">
         {socials.map((social) => (
           <a

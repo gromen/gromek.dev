@@ -102,7 +102,9 @@
     ]
   },
   "footer": {
-    "copyright": "Marcin Gromek. All rights reserved."
+    "copyright": "Marcin Gromek. All rights reserved.",
+    "privacyPolicy": "Privacy policy",
+    "privacyPolicyHref": "/en/privacy-policy"
   },
   "hero": {
     "cta": "View portfolio",

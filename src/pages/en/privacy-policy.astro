@@ -1,0 +1,112 @@
+---
+import Footer from '../../components/Footer.astro';
+import Navigation from '../../components/Navigation.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = `Privacy Policy — Marcin Gromek`;
+const description = 'Privacy policy of gromek.dev — how personal data and cookies are processed under GDPR.';
+const lastUpdated = 'April 9, 2026';
+---
+
+<BaseLayout title={title} description={description} locale="en">
+  <Navigation locale="en" currentPath="/en/privacy-policy" />
+  <main id="main-content" class="flex-1 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">Privacy Policy</h1>
+    <p class="mt-4 text-sm text-text/50">Last updated: {lastUpdated}</p>
+
+    <div class="prose-custom mt-10 space-y-8 text-text/80 leading-relaxed">
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">1. Data Controller</h2>
+        <p>
+          The controller of personal data collected via <strong>gromek.dev</strong> is
+          <strong> Marcin Gromek</strong>, operating a sole proprietorship as a Frontend Developer, based in Poland.
+        </p>
+        <p class="mt-2">Controller details:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>Address: pl. Sobotki 4 lok. 3, 07-300 Ostrów Mazowiecka, Poland</li>
+          <li>Tax ID (NIP): 7591634940</li>
+          <li>Email: <a href="mailto:gromek.marcin@outlook.com" class="text-primary hover:underline">gromek.marcin@outlook.com</a></li>
+          <li>Phone: <a href="tel:+48666211109" class="text-primary hover:underline">+48 666 211 109</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">2. Data Collected</h2>
+        <p>gromek.dev is a portfolio / business-card website and <strong>does not use contact forms, user registration, or user accounts</strong>. The following data may be processed in connection with your visit:</p>
+        <ul class="list-disc pl-6 mt-3 space-y-2">
+          <li><strong>Technical data</strong> — IP address, browser type and version, operating system, device type, screen resolution, language, referrer, date and time of visit. Automatically logged by the hosting provider (Netlify) and — with your consent — by Google Analytics.</li>
+          <li><strong>Data from direct contact</strong> — if you email or call the addresses listed above, any data you voluntarily share (name, email, message content, etc.) will be processed.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">3. Purposes and Legal Bases</h2>
+        <p>Your data is processed for the following purposes, based on GDPR:</p>
+        <ul class="list-disc pl-6 mt-3 space-y-2">
+          <li><strong>Ensuring the site's operation and security</strong> — Art. 6(1)(f) GDPR (legitimate interest).</li>
+          <li><strong>Analytics and statistics (Google Analytics 4)</strong> — Art. 6(1)(a) GDPR (consent given via the cookie banner).</li>
+          <li><strong>Handling inquiries sent by email or phone</strong> — Art. 6(1)(b) GDPR (steps prior to entering into a contract) and Art. 6(1)(f) GDPR.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">4. Cookies</h2>
+        <p>This site uses cookies (small text files stored by your browser) in two categories:</p>
+        <ul class="list-disc pl-6 mt-3 space-y-2">
+          <li>
+            <strong>Necessary</strong> — required for the site to function correctly (e.g. remembering your cookie choice and your light/dark theme preference). Stored in browser <code>localStorage</code>. No consent required.
+          </li>
+          <li>
+            <strong>Analytics (Google Analytics 4)</strong> — loaded <strong>only after you give consent</strong> via the cookie banner. Used to anonymously measure traffic and site usage. Measurement ID: <code>G-WT3CP8NSDK</code>.
+          </li>
+        </ul>
+        <p class="mt-3">You can withdraw consent at any time by clearing site data in your browser — the banner will reappear on your next visit. Most browsers also let you manage cookies globally in settings.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">5. Data Recipients</h2>
+        <p>Data may be shared with the following processors:</p>
+        <ul class="list-disc pl-6 mt-3 space-y-2">
+          <li><strong>Netlify, Inc.</strong> — hosting provider (server logs).</li>
+          <li><strong>Google Ireland Limited / Google LLC</strong> — Google Analytics 4 provider (only with consent). This may involve transfer outside the EEA; Google ensures appropriate safeguards through Standard Contractual Clauses.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">6. Retention Periods</h2>
+        <ul class="list-disc pl-6 mt-3 space-y-2">
+          <li>Server logs — according to Netlify's policy (typically up to 30 days).</li>
+          <li>Google Analytics data — per account settings, up to 14 months.</li>
+          <li>Email correspondence — for the time needed to respond and for any resulting cooperation, then until claims become time-barred.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">7. Your Rights</h2>
+        <p>Under GDPR you have the right to:</p>
+        <ul class="list-disc pl-6 mt-3 space-y-1">
+          <li>access your data and receive a copy,</li>
+          <li>rectify (correct) your data,</li>
+          <li>erase your data ("right to be forgotten"),</li>
+          <li>restrict processing,</li>
+          <li>data portability,</li>
+          <li>object to processing,</li>
+          <li>withdraw consent at any time (without affecting the lawfulness of processing before withdrawal),</li>
+          <li>lodge a complaint with a supervisory authority — in Poland: <strong>President of the Personal Data Protection Office</strong> (uodo.gov.pl).</li>
+        </ul>
+        <p class="mt-3">To exercise these rights, contact: <a href="mailto:gromek.marcin@outlook.com" class="text-primary hover:underline">gromek.marcin@outlook.com</a>.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">8. Links to Third-Party Services</h2>
+        <p>This site contains links to external services (LinkedIn, GitHub). The controller is not responsible for the privacy practices of those services — please review their respective privacy policies directly.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold text-text mb-3">9. Changes to This Policy</h2>
+        <p>This policy may be updated. The last update date is shown at the top of the page. For material changes, a notice will be displayed in a prominent place.</p>
+      </section>
+    </div>
+  </main>
+  <Footer locale="en" />
+</BaseLayout>
