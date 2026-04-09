@@ -107,7 +107,7 @@
   "hero": {
     "cta": "Zobacz portfolio",
     "name": "Marcin Gromek",
-    "subtitle": "Specjalizuję się w React, Next.js, Shopify i WordPress",
+    "subtitle": "Specjalizuję się w Shopify, WordPress, React, Vue.js",
     "title": "Frontend Developer"
   },
   "nav": {
@@ -129,91 +129,91 @@
     "heading": "Wybrane projekty",
     "highlights": [
       {
-        "description": "Sklep z merchandisingiem youtuberskim na Shopify z integracją TrustMate",
-        "tags": ["Shopify", "Liquid", "JavaScript"],
-        "title": "WojanShop.pl"
+        "description": "Strona wizytówka dla barbera — nowoczesny design z sekcją realizacji wideo (reels), cookie consent z opóźnieniem dla LCP, integracja GTM/GA4 i ciemnym motywem.",
+        "tags": ["Astro", "Tailwind CSS", "Google Tag Manager", "GA4"],
+        "title": "Parys Saint-Barber"
       },
       {
-        "description": "Międzynarodowa platforma e-commerce z wielojęzycznością",
-        "tags": ["Shopify", "Liquid", "JavaScript"],
-        "title": "Miior7.com"
+        "description": "Strona firmowa dla specjalisty od robót ziemnych i wykopów stawów. Nowoczesny, minimalistyczny design z galerią realizacji i responsywnym layoutem.",
+        "tags": ["Astro", "CSS3", "JavaScript", "Netlify"],
+        "title": "Gravaris"
       },
       {
-        "description": "Redesign frontendu sklepu z kawą na platformie Shopify",
-        "tags": ["Shopify", "Liquid", "CSS3"],
-        "title": "Bellman Espresso"
+        "description": "Strona firmowa dla wykonawcy robót ziemnych i hydrotechnicznych z 15+ letnim doświadczeniem. Elegancki dark design z portfolio 23 realizacji.",
+        "tags": ["Astro", "CSS3", "JavaScript", "Netlify"],
+        "title": "XKOP"
       },
       {
-        "description": "Custom video gallery i rozszerzone funkcjonalności PDP",
-        "tags": ["Shopify", "Liquid", "JavaScript"],
+        "description": "Sklep e-commerce z ergonomicznymi biurkami i akcesoriami. Custom features: video gallery na PDP, konfigurator produktów, zaawansowana prezentacja 3D.",
+        "tags": ["Shopify", "Liquid", "JavaScript", "CSS3"],
         "title": "Desky"
       }
     ],
     "viewAll": "Zobacz wszystkie projekty"
   },
+  "services": {
+    "cta": "Skontaktuj się",
+    "ctaHeading": "Zainteresowany?",
+    "description": "Tworzę strony internetowe i sklepy online — od prostych stron wizytówek po rozbudowane aplikacje webowe. Specjalizuję się również w optymalizacji szybkości ładowania i Core Web Vitals.",
+    "items": [
+      {
+        "description": "Strony firmowe, blogi, sklepy online. Modyfikacje motywów, naprawianie problemów, przyspieszanie wolnych WordPressów. Realizacje: nellijewels.com.",
+        "title": "WordPress / WooCommerce"
+      },
+      {
+        "description": "Profesjonalne sklepy z custom motywami, integracjami z płatnościami, kurierami, Baselinker. Realizacje: theeight.pl, Desky.com, WojanShop.pl, MIIOR7.com, Bellman Espresso.",
+        "title": "Shopify"
+      },
+      {
+        "description": "Nowoczesne aplikacje webowe. Projekty dla Banku Pekao S.A., Emirates NBD, operatora PLAY (React), marki Marilyn, Tatuum, Cosmedica, Mastivo (Vue.js).",
+        "title": "React / Next.js / Vue.js"
+      },
+      {
+        "description": "Lekkie, superszybkie strony dla firm usługowych. Idealne dla rzemieślników, budowlańców, lokalnych biznesów. Realizacje: gravaris.pl, xkop.com.pl, parysbarber.pl.",
+        "title": "Strony wizytówki (Astro)"
+      },
+      {
+        "description": "Poprawa Core Web Vitals, przyspieszenie działania, lepsze pozycje w Google. WordPress, Shopify, Magento, Shoper — każda platforma.",
+        "title": "Optymalizacja Web Vitals"
+      },
+      {
+        "description": "Składanie filmów ze zdjęć i materiałów wideo. Tworzenie spójnych produkcji z muzyką, napisami i efektami.",
+        "title": "Montaż wideo"
+      },
+      {
+        "description": "Retusz i edycja zdjęć, wycinanie obiektów z tła, korekcja kolorów i przygotowanie grafiki do publikacji online i druku.",
+        "title": "Obróbka grafiki rastrowej"
+      },
+      {
+        "description": "Tworzenie i edycja grafiki wektorowej w formatach SVG, AI, EPS. Skalowalne pliki gotowe do użycia w każdym rozmiarze.",
+        "title": "Grafika wektorowa"
+      },
+      {
+        "description": "Generowanie i projektowanie logotypów w formacie wektorowym. Czysty, profesjonalny design gotowy do druku i publikacji online.",
+        "title": "Projektowanie logo"
+      },
+      {
+        "description": "Projektowanie dwustronnych wizytówek zgodnie z wytycznymi marki. Pliki gotowe do druku w rozdzielczości 300 DPI.",
+        "title": "Wizytówki"
+      },
+      {
+        "description": "Projektowanie bannerów reklamowych na potrzeby kampanii online i offline. Animowane i statyczne formaty dostosowane do specyfikacji platformy.",
+        "title": "Bannery reklamowe"
+      }
+    ],
+    "title": "Usługi"
+  },
   "techStack": {
     "heading": "Stack technologiczny",
     "skills": [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
       "Shopify",
-      "WordPress",
       "Astro",
+      "WordPress",
+      "Vue.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
       "Node.js"
-    ]
-  },
-  "services": {
-    "title": "Usługi",
-    "description": "Tworzę strony internetowe i sklepy online — od prostych stron wizytówek po rozbudowane aplikacje webowe. Specjalizuję się również w optymalizacji szybkości ładowania i Core Web Vitals.",
-    "cta": "Skontaktuj się",
-    "ctaHeading": "Zainteresowany?",
-    "items": [
-      {
-        "title": "WordPress / WooCommerce",
-        "description": "Strony firmowe, blogi, sklepy online. Modyfikacje motywów, naprawianie problemów, przyspieszanie wolnych WordPressów. Realizacje: nellijewels.com."
-      },
-      {
-        "title": "Shopify",
-        "description": "Profesjonalne sklepy z custom motywami, integracjami z płatnościami, kurierami, Baselinker. Realizacje: theeight.pl, Desky.com, WojanShop.pl, MIIOR7.com, Bellman Espresso."
-      },
-      {
-        "title": "React / Next.js / Vue.js",
-        "description": "Nowoczesne aplikacje webowe. Projekty dla Banku Pekao S.A., Emirates NBD, operatora PLAY (React), marki Marilyn, Tatuum, Cosmedica, Mastivo (Vue.js)."
-      },
-      {
-        "title": "Strony wizytówki (Astro)",
-        "description": "Lekkie, superszybkie strony dla firm usługowych. Idealne dla rzemieślników, budowlańców, lokalnych biznesów. Realizacje: gravaris.pl, xkop.com.pl, parysbarber.pl."
-      },
-      {
-        "title": "Optymalizacja Web Vitals",
-        "description": "Poprawa Core Web Vitals, przyspieszenie działania, lepsze pozycje w Google. WordPress, Shopify, Magento, Shoper — każda platforma."
-      },
-      {
-        "title": "Montaż wideo",
-        "description": "Składanie filmów ze zdjęć i materiałów wideo. Tworzenie spójnych produkcji z muzyką, napisami i efektami."
-      },
-      {
-        "title": "Obróbka grafiki rastrowej",
-        "description": "Retusz i edycja zdjęć, wycinanie obiektów z tła, korekcja kolorów i przygotowanie grafiki do publikacji online i druku."
-      },
-      {
-        "title": "Grafika wektorowa",
-        "description": "Tworzenie i edycja grafiki wektorowej w formatach SVG, AI, EPS. Skalowalne pliki gotowe do użycia w każdym rozmiarze."
-      },
-      {
-        "title": "Projektowanie logo",
-        "description": "Generowanie i projektowanie logotypów w formacie wektorowym. Czysty, profesjonalny design gotowy do druku i publikacji online."
-      },
-      {
-        "title": "Wizytówki",
-        "description": "Projektowanie dwustronnych wizytówek zgodnie z wytycznymi marki. Pliki gotowe do druku w rozdzielczości 300 DPI."
-      },
-      {
-        "title": "Bannery reklamowe",
-        "description": "Projektowanie bannerów reklamowych na potrzeby kampanii online i offline. Animowane i statyczne formaty dostosowane do specyfikacji platformy."
-      }
     ]
   }
 }

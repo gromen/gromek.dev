@@ -107,7 +107,7 @@
   "hero": {
     "cta": "View portfolio",
     "name": "Marcin Gromek",
-    "subtitle": "Specializing in React, Next.js, Shopify, and WordPress",
+    "subtitle": "Specializing in Shopify, WordPress, React, Vue.js",
     "title": "Frontend Developer"
   },
   "nav": {
@@ -129,91 +129,91 @@
     "heading": "Featured projects",
     "highlights": [
       {
-        "description": "YouTuber merchandise store on Shopify with TrustMate integration",
-        "tags": ["Shopify", "Liquid", "JavaScript"],
-        "title": "WojanShop.pl"
+        "description": "Business card website for a barber — modern design with video reels section, delayed cookie consent for LCP optimization, GTM/GA4 integration, and dark mode.",
+        "tags": ["Astro", "Tailwind CSS", "Google Tag Manager", "GA4"],
+        "title": "Parys Saint-Barber"
       },
       {
-        "description": "International e-commerce platform with multi-language support",
-        "tags": ["Shopify", "Liquid", "JavaScript"],
-        "title": "Miior7.com"
+        "description": "Company website for an earthworks and pond excavation specialist. Modern, minimalist design with project gallery and responsive layout.",
+        "tags": ["Astro", "CSS3", "JavaScript", "Netlify"],
+        "title": "Gravaris"
       },
       {
-        "description": "Coffee equipment store frontend redesign on Shopify",
-        "tags": ["Shopify", "Liquid", "CSS3"],
-        "title": "Bellman Espresso"
+        "description": "Company website for an earthworks and hydrotechnical contractor with 15+ years of experience. Elegant dark design with a portfolio of 23 completed projects.",
+        "tags": ["Astro", "CSS3", "JavaScript", "Netlify"],
+        "title": "XKOP"
       },
       {
-        "description": "Custom video gallery and enhanced PDP functionality",
-        "tags": ["Shopify", "Liquid", "JavaScript"],
+        "description": "E-commerce store for ergonomic desks and accessories. Custom features: video gallery on PDP, product configurator, advanced 3D presentation.",
+        "tags": ["Shopify", "Liquid", "JavaScript", "CSS3"],
         "title": "Desky"
       }
     ],
     "viewAll": "View all projects"
   },
+  "services": {
+    "cta": "Get in touch",
+    "ctaHeading": "Interested?",
+    "description": "I build websites and online stores — from simple landing pages to full-scale web applications. I also specialise in page speed optimisation and Core Web Vitals.",
+    "items": [
+      {
+        "description": "Business websites, blogs, and online stores. Theme customisation, troubleshooting, and speeding up slow WordPress installs. References: nellijewels.com.",
+        "title": "WordPress / WooCommerce"
+      },
+      {
+        "description": "Professional stores with custom themes, payment and courier integrations, Baselinker. References: theeight.pl, Desky.com, WojanShop.pl, MIIOR7.com, Bellman Espresso.",
+        "title": "Shopify"
+      },
+      {
+        "description": "Modern web applications. Projects for Bank Pekao S.A., Emirates NBD, PLAY operator (React), Marilyn, Tatuum, Cosmedica, Mastivo brands (Vue.js).",
+        "title": "React / Next.js / Vue.js"
+      },
+      {
+        "description": "Lightweight, ultra-fast websites for service businesses. Perfect for tradespeople, contractors, and local businesses. References: gravaris.pl, xkop.com.pl, parysbarber.pl.",
+        "title": "Landing Pages (Astro)"
+      },
+      {
+        "description": "Improving Core Web Vitals, faster load times, better Google rankings. WordPress, Shopify, Magento, Shoper — any platform.",
+        "title": "Web Vitals Optimisation"
+      },
+      {
+        "description": "Compositing videos from photos and footage. Creating cohesive productions with music, subtitles, and effects.",
+        "title": "Video editing"
+      },
+      {
+        "description": "Photo retouching and editing, background removal, color correction, and preparing graphics for online publishing and print.",
+        "title": "Raster graphics editing"
+      },
+      {
+        "description": "Creating and editing vector graphics in SVG, AI, EPS formats. Scalable files ready for use at any size.",
+        "title": "Vector graphics"
+      },
+      {
+        "description": "Generating and designing logotypes in vector format. Clean, professional design ready for print and online publishing.",
+        "title": "Logo design"
+      },
+      {
+        "description": "Designing double-sided business cards following brand guidelines. Print-ready files at 300 DPI resolution.",
+        "title": "Business cards"
+      },
+      {
+        "description": "Designing advertising banners for online and offline campaigns. Animated and static formats tailored to platform specifications.",
+        "title": "Advertising banners"
+      }
+    ],
+    "title": "Services"
+  },
   "techStack": {
     "heading": "Tech stack",
     "skills": [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
       "Shopify",
-      "WordPress",
       "Astro",
+      "WordPress",
+      "Vue.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
       "Node.js"
-    ]
-  },
-  "services": {
-    "title": "Services",
-    "description": "I build websites and online stores — from simple landing pages to full-scale web applications. I also specialise in page speed optimisation and Core Web Vitals.",
-    "cta": "Get in touch",
-    "ctaHeading": "Interested?",
-    "items": [
-      {
-        "title": "WordPress / WooCommerce",
-        "description": "Business websites, blogs, and online stores. Theme customisation, troubleshooting, and speeding up slow WordPress installs. References: nellijewels.com."
-      },
-      {
-        "title": "Shopify",
-        "description": "Professional stores with custom themes, payment and courier integrations, Baselinker. References: theeight.pl, Desky.com, WojanShop.pl, MIIOR7.com, Bellman Espresso."
-      },
-      {
-        "title": "React / Next.js / Vue.js",
-        "description": "Modern web applications. Projects for Bank Pekao S.A., Emirates NBD, PLAY operator (React), Marilyn, Tatuum, Cosmedica, Mastivo brands (Vue.js)."
-      },
-      {
-        "title": "Landing Pages (Astro)",
-        "description": "Lightweight, ultra-fast websites for service businesses. Perfect for tradespeople, contractors, and local businesses. References: gravaris.pl, xkop.com.pl, parysbarber.pl."
-      },
-      {
-        "title": "Web Vitals Optimisation",
-        "description": "Improving Core Web Vitals, faster load times, better Google rankings. WordPress, Shopify, Magento, Shoper — any platform."
-      },
-      {
-        "title": "Video editing",
-        "description": "Compositing videos from photos and footage. Creating cohesive productions with music, subtitles, and effects."
-      },
-      {
-        "title": "Raster graphics editing",
-        "description": "Photo retouching and editing, background removal, color correction, and preparing graphics for online publishing and print."
-      },
-      {
-        "title": "Vector graphics",
-        "description": "Creating and editing vector graphics in SVG, AI, EPS formats. Scalable files ready for use at any size."
-      },
-      {
-        "title": "Logo design",
-        "description": "Generating and designing logotypes in vector format. Clean, professional design ready for print and online publishing."
-      },
-      {
-        "title": "Business cards",
-        "description": "Designing double-sided business cards following brand guidelines. Print-ready files at 300 DPI resolution."
-      },
-      {
-        "title": "Advertising banners",
-        "description": "Designing advertising banners for online and offline campaigns. Animated and static formats tailored to platform specifications."
-      }
     ]
   }
 }

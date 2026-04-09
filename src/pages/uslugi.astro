@@ -1,8 +1,8 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
 import { getTranslations } from '../i18n/utils';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const t = getTranslations('pl');
 const title = `${t.services.title} — Marcin Gromek`;
@@ -110,7 +110,7 @@ const icons = [
       </h2>
       <a
         href="/kontakt"
-        class="inline-block bg-primary hover:bg-primary/90 text-background font-semibold px-8 py-3 rounded-xl transition-colors duration-200"
+        class="inline-block bg-primary hover:bg-primary/90 hover:scale-105 text-background font-semibold px-8 py-3 rounded-xl transition-transform duration-200"
       >
         {t.services.cta}
       </a>

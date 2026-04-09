@@ -13,21 +13,22 @@ const { locale, subtitle, ctaText, ctaHref }: Props = Astro.props as Props;
 const t = getTranslations(locale);
 ---
 
-<section class="relative py-20 md:py-32">
+<section class="relative py-20 md:py-32 overflow-hidden">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight flex flex-col items-center justify-center gap-2 motion-safe:animate-fade-up">
-        <span class="text-primary">{t.hero.name}</span>  <span class="text-secondary">{t.hero.title}</span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight flex flex-col items-center justify-center gap-2 motion-reduce:opacity-100 motion-safe:animate-fade-up motion-safe:[animation-fill-mode:forwards]">
+        <span>{t.hero.name}</span>
+        <span class="text-3xl sm:text-4xl md:text-5xl font-semibold">{t.hero.title}</span>
       </h1>
-      <p class="mt-6 text-xl sm:text-2xl text-text/70 motion-safe:animate-fade-up motion-safe:[animation-delay:200ms]">
+      <p class="mt-6 text-xl sm:text-2xl text-text/70 opacity-0 motion-reduce:opacity-100 motion-safe:animate-fade-up motion-safe:[animation-delay:300ms] motion-safe:[animation-fill-mode:forwards]">
         {subtitle}
       </p>
-      <div class="mt-10 motion-safe:animate-fade-up motion-safe:[animation-delay:400ms]">
+      <div class="mt-10 opacity-0 motion-reduce:opacity-100 motion-safe:animate-fade-up motion-safe:[animation-delay:550ms] motion-safe:[animation-fill-mode:forwards]">
         <a
           href={ctaHref}
           class="inline-flex items-center px-6 py-3 text-base font-medium rounded-lg
-                 bg-primary text-background hover:bg-primary/90
-                 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                 bg-primary text-background hover:bg-primary/90 hover:scale-105
+                 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary active:scale-95"
         >
           {ctaText}
           <svg
