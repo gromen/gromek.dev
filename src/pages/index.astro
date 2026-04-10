@@ -10,7 +10,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const t = getTranslations('pl');
 ---
 
-<BaseLayout title={t.hero.name} locale="pl">
+<BaseLayout
+  title={`${t.hero.name} | ${t.hero.title} — React, Shopify, WordPress`}
+  description="Frontend Developer z 10+ latami doświadczenia. Specjalizuję się w React, Shopify i WordPress. Tworzę szybkie i responsywne aplikacje webowe."
+  locale="pl"
+>
     <Navigation locale="pl" currentPath="/" />
 
     <main id="main-content" class="flex-1">
