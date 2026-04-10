@@ -1,13 +1,17 @@
 ---
+import { getTranslations } from '../i18n/utils';
+
 interface Props {
   title: string;
   description: string;
   url: string;
   technologies: string[];
   image: string;
+  locale: string;
 }
 
-const { title, description, url, technologies, image } = Astro.props;
+const { title, description, url, technologies, image, locale } = Astro.props;
+const t = getTranslations(locale as 'pl' | 'en');
 ---
 
 <article class="group bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 motion-safe:hover:-translate-y-1 motion-safe:transition-transform motion-safe:duration-200">
@@ -44,7 +48,7 @@ const { title, description, url, technologies, image } = Astro.props;
       </div>
 
       <div class="mt-4 flex items-center text-primary font-medium">
-        <span class="group-hover:mr-2 transition-all">View project</span>
+        <span class="group-hover:mr-2 transition-all">{ t.portfolio?.viewProject ? t.portfolio.viewProject : 'View project'}</span>
         <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
         </svg>
