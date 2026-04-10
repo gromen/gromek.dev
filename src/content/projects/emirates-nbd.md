@@ -1,10 +1,10 @@
 ---
 title: "Emirates NBD"
-description: "Banking solutions dla Emirates NBD. Frontend development dla enterprise-level banking platform."
+description: "Rozwiązania bankowe dla Emirates NBD. Rozwój frontendu dla platformy bankowej klasy enterprise."
 descriptionEn: "Banking solutions for Emirates NBD. Frontend development for enterprise-level banking platform."
 url: "https://www.emiratesnbd.com"
 technologies:
-  ["React", "TypeScript", "Next.js", "Microservices", "API Integration"]
+  ["HTML5", "CSS3", "Javascript", "Microservices", "API Integration"]
 image: "/images/projects/emirates-nbd-desktop.webp"
 category: "agency"
 featured: true
