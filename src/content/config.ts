@@ -11,6 +11,7 @@ const projectsCollection = defineCollection({
     image: z.string(),
     category: z.enum(['independent', 'agency', 'special']),
     featured: z.boolean().default(false),
+    wip: z.boolean().default(false),
     order: z.number().default(0),
   }),
 });

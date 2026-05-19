@@ -125,7 +125,8 @@
     "independentProjects": "Projekty samodzielne",
     "specialProjects": "Projekty specjalne",
     "title": "Portfolio",
-    "viewProject": "Zobacz projekt"
+    "viewProject": "Zobacz projekt",
+    "wip": "W realizacji"
   },
   "projects": {
     "heading": "Wybrane projekty",

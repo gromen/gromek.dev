@@ -35,6 +35,7 @@ const allProjects = (await getCollection('projects'))
               technologies={project.data.technologies}
               image={project.data.image}
               locale="pl"
+              wip={project.data.wip}
             />
           ))}
         </div>

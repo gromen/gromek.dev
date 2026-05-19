@@ -1,5 +1,5 @@
 ---
-import { getTranslations } from '../i18n/utils';
+import { getTranslations } from "../i18n/utils";
 
 interface Props {
   title: string;
@@ -8,30 +8,49 @@ interface Props {
   technologies: string[];
   image: string;
   locale: string;
+  wip?: boolean;
 }
 
-const { title, description, url, technologies, image, locale } = Astro.props;
-const t = getTranslations(locale as 'pl' | 'en');
+const { title, description, url, technologies, image, locale, wip } =
+  Astro.props;
+const t = getTranslations(locale as "pl" | "en");
 ---
 
-<article class="group bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 motion-safe:hover:-translate-y-1 motion-safe:transition-transform motion-safe:duration-200">
-  <a href={url} target="_blank" rel="noopener noreferrer" class="block active:scale-[0.99]">
+<article
+  class="group bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 motion-safe:hover:-translate-y-1 motion-safe:transition-transform motion-safe:duration-200"
+>
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="block active:scale-[0.99]"
+  >
     <div class="aspect-video bg-text/10 relative overflow-hidden">
+      {
+        wip && (
+          <div class="absolute top-3 left-3 z-10 px-2 py-1 text-xs font-bold bg-amber-400 text-amber-900 rounded-md shadow-sm uppercase tracking-wide">
+            {t.portfolio?.wip ?? "WIP"}
+          </div>
+        )
+      }
       <img
         src={image}
-        srcset={`${image.replace('-desktop', '-mobile')} 375w, ${image} 800w`}
-        sizes="(max-width: 640px) 375px, 800px"
         alt={`Screenshot of ${title}`}
         class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
         loading="lazy"
         width="800"
         height="450"
       />
-      <div class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <div
+        class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      >
+      </div>
     </div>
 
     <div class="p-6">
-      <h3 class="text-xl font-bold text-text mb-2 group-hover:text-primary transition-colors">
+      <h3
+        class="text-xl font-bold text-text mb-2 group-hover:text-primary transition-colors"
+      >
         {title}
       </h3>
 
@@ -40,17 +59,33 @@ const t = getTranslations(locale as 'pl' | 'en');
       </p>
 
       <div class="flex flex-wrap gap-2">
-        {technologies.map((tech) => (
-          <span class="px-3 py-1 text-xs font-medium bg-text/10 text-text/70 rounded-full">
-            {tech}
-          </span>
-        ))}
+        {
+          technologies.map((tech) => (
+            <span class="px-3 py-1 text-xs font-medium bg-text/10 text-text/70 rounded-full">
+              {tech}
+            </span>
+          ))
+        }
       </div>
 
       <div class="mt-4 flex items-center text-primary font-medium">
-        <span class="group-hover:mr-2 transition-all">{ t.portfolio?.viewProject ? t.portfolio.viewProject : 'View project'}</span>
-        <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        <span class="group-hover:mr-2 transition-all"
+          >{
+            t.portfolio?.viewProject ? t.portfolio.viewProject : "View project"
+          }</span
+        >
+        <svg
+          class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
         </svg>
       </div>
     </div>
