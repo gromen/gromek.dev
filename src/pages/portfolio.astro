@@ -11,7 +11,20 @@ const title = `${t.nav.portfolio} — Marcin Gromek`;
 
 const allProjects = (await getCollection('projects'))
   .sort((a, b) => a.data.order - b.data.order);
+
+const allTechs = [...new Set(allProjects.flatMap(p => p.data.technologies))].sort();
 ---
+
+<style is:global>
+  @keyframes filterIn {
+    from { opacity: 0; transform: scale(0.95); filter: blur(2px); }
+    to { opacity: 1; transform: scale(1); filter: blur(0); }
+  }
+  @keyframes filterOut {
+    from { opacity: 1; transform: scale(1); filter: blur(0); }
+    to { opacity: 0; transform: scale(0.95); filter: blur(2px); }
+  }
+</style>
 
 <BaseLayout title={title} description={t.portfolio.description} locale="pl">
     <Navigation locale="pl" currentPath="/portfolio" />
@@ -24,6 +37,26 @@ const allProjects = (await getCollection('projects'))
           {t.portfolio.description}
         </p>
       </header>
+
+      <div class="mb-8">
+        <p class="text-sm font-medium text-text/50 mb-3 uppercase tracking-wide">Filtruj po technologii:</p>
+        <div id="tech-filters" class="flex flex-wrap gap-2">
+          <button
+            id="filter-all"
+            class="px-3 py-1.5 text-sm font-medium rounded-full cursor-pointer transition-all duration-200 filter-active bg-primary/20 text-primary border border-primary/30"
+          >
+            Wszystkie
+          </button>
+          {allTechs.map((tech) => (
+            <button
+              data-tech={tech}
+              class="px-3 py-1.5 text-sm font-medium rounded-full bg-text/10 text-text/70 cursor-pointer transition-all duration-200 hover:bg-text/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              {tech}
+            </button>
+          ))}
+        </div>
+      </div>
 
       <section class="mb-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -43,3 +76,70 @@ const allProjects = (await getCollection('projects'))
     </main>
     <Footer locale="pl" />
 </BaseLayout>
+
+<script>
+  const techButtons = document.querySelectorAll<HTMLButtonElement>('[data-tech]');
+  const cards = document.querySelectorAll<HTMLElement>('article[data-technologies]');
+  const allBtn = document.getElementById('filter-all') as HTMLButtonElement;
+  let activeFilter: string | null = null;
+
+  function setAllBtnActive(active: boolean) {
+    if (active) {
+      allBtn.classList.add('bg-primary/20', 'text-primary', 'border', 'border-primary/30');
+      allBtn.classList.remove('bg-text/10', 'text-text/70');
+    } else {
+      allBtn.classList.remove('bg-primary/20', 'text-primary', 'border', 'border-primary/30');
+      allBtn.classList.add('bg-text/10', 'text-text/70');
+    }
+  }
+
+  function applyFilter() {
+    setAllBtnActive(activeFilter === null);
+
+    cards.forEach(card => {
+      const techs = (card.dataset.technologies ?? '').split(',').map(t => t.trim());
+      const matches = activeFilter === null || techs.includes(activeFilter);
+      card.dataset.visible = matches ? 'true' : 'false';
+
+      if (matches) {
+        card.style.display = '';
+        card.style.animation = 'filterIn 0.3s ease forwards';
+      } else {
+        card.style.animation = 'filterOut 0.25s ease forwards';
+        card.addEventListener('animationend', () => {
+          if (card.dataset.visible === 'false') card.style.display = 'none';
+        }, { once: true });
+      }
+    });
+  }
+
+  allBtn.addEventListener('click', () => {
+    activeFilter = null;
+    techButtons.forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-white');
+      btn.classList.add('bg-text/10', 'text-text/70');
+    });
+    applyFilter();
+  });
+
+  techButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tech = btn.dataset.tech ?? '';
+      const isActive = activeFilter === tech;
+
+      techButtons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-white');
+        b.classList.add('bg-text/10', 'text-text/70');
+      });
+
+      if (isActive) {
+        activeFilter = null;
+      } else {
+        activeFilter = tech;
+        btn.classList.add('bg-primary', 'text-white');
+        btn.classList.remove('bg-text/10', 'text-text/70');
+      }
+      applyFilter();
+    });
+  });
+</script>

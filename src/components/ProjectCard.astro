@@ -18,6 +18,7 @@ const t = getTranslations(locale as "pl" | "en");
 
 <article
   class="group bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 motion-safe:hover:-translate-y-1 motion-safe:transition-transform motion-safe:duration-200"
+  data-technologies={technologies.join(',')}
 >
   <a
     href={url}
