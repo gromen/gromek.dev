@@ -166,8 +166,10 @@ async function main() {
   const outputDir = path.join(projectRoot, 'public/images/projects');
   await ensureDirectory(outputDir);
 
-  const projects = await getProjects();
-  console.log(`Found ${projects.length} projects\n`);
+  const slugFilter = process.argv[2];
+  const allProjects = await getProjects();
+  const projects = slugFilter ? allProjects.filter(p => p.slug === slugFilter) : allProjects;
+  console.log(`Found ${projects.length} project(s)${slugFilter ? ` (filtered: ${slugFilter})` : ''}\n`);
 
   let successCount = 0;
   let failedCount = 0;
