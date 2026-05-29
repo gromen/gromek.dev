@@ -9,7 +9,7 @@ technologies:
     "React",
     "Remix.js",
     "TypeScript",
-    "Tailwind CSS",
+    "TailwindCSS",
     "GraphQL",
     "Strapi CMS",
   ]

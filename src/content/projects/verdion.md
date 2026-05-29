@@ -8,7 +8,7 @@ technologies:
     "WordPress",
     "Bedrock",
     "Sage",
-    "Tailwind CSS",
+    "TailwindCSS",
     "Gutenberg Blocks",
     "PHP 8.4",
     "Deployer",

@@ -3,7 +3,7 @@ title: "Diamond Touch Studio"
 description: "Strona firmowa dla studia detailingu samochodowego w Ostrowi Mazowieckiej. Prezentacja usług: powłoki ceramiczne, korekta lakieru, folie PPF."
 descriptionEn: "Corporate website for a car detailing studio in Ostrów Mazowiecka. Showcasing services: ceramic coatings, paint correction, PPF films."
 url: "https://diamondtouch.pl"
-technologies: ["Astro", "Tailwind CSS", "TypeScript", "Cloudflare Pages"]
+technologies: ["Astro", "TailwindCSS", "TypeScript", "Cloudflare Pages"]
 image: "/images/projects/diamond-touch-studio-desktop.webp"
 category: "independent"
 featured: false
