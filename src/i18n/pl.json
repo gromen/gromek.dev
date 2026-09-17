@@ -104,7 +104,8 @@
   "footer": {
     "copyright": "Marcin Gromek. Wszystkie prawa zastrzeżone.",
     "privacyPolicy": "Polityka prywatności",
-    "privacyPolicyHref": "/polityka-prywatnosci"
+    "privacyPolicyHref": "/polityka-prywatnosci",
+    "address": "ul. Kolarska 15/50, 07-300 Ostrów Mazowiecka"
   },
   "hero": {
     "cta": "Zobacz portfolio",
@@ -202,6 +203,10 @@
       {
         "description": "Projektowanie bannerów reklamowych na potrzeby kampanii online i offline. Animowane i statyczne formaty dostosowane do specyfikacji platformy.",
         "title": "Bannery reklamowe"
+      },
+      {
+        "description": "Prowadzenie i optymalizacja kampanii Google Ads dla klientów — struktura kampanii, dobór słów kluczowych, optymalizacja stawek i Quality Score, raportowanie wyników i ROAS.",
+        "title": "Zarządzanie kampaniami Google Ads / SEM"
       }
     ],
     "title": "Usługi"

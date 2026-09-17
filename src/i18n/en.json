@@ -104,7 +104,8 @@
   "footer": {
     "copyright": "Marcin Gromek. All rights reserved.",
     "privacyPolicy": "Privacy policy",
-    "privacyPolicyHref": "/en/privacy-policy"
+    "privacyPolicyHref": "/en/privacy-policy",
+    "address": "ul. Kolarska 15/50, 07-300 Ostrów Mazowiecka, Poland"
   },
   "hero": {
     "cta": "View portfolio",
@@ -202,6 +203,10 @@
       {
         "description": "Designing advertising banners for online and offline campaigns. Animated and static formats tailored to platform specifications.",
         "title": "Advertising banners"
+      },
+      {
+        "description": "Managing and optimising Google Ads campaigns for clients — campaign structure, keyword research, bid and Quality Score optimisation, performance reporting and ROAS.",
+        "title": "Google Ads Campaign Management / SEM"
       }
     ],
     "title": "Services"
