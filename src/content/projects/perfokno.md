@@ -7,7 +7,7 @@ technologies: ["Astro", "Tailwind CSS", "TypeScript", "Cloudflare Pages"]
 image: "/images/projects/perfokno-desktop.webp"
 category: "independent"
 featured: false
-wip: true
+wip: false
 order: -7
 ---
 
