@@ -4,6 +4,7 @@ description: "Sklep e-commerce z profesjonalnym wyposażeniem klubów fitness i 
 descriptionEn: "E-commerce store for professional fitness club and home gym equipment. WooCommerce on WordPress with Baselinker integration and Cloudflare deployment."
 url: "https://twinsstal.pl"
 technologies: ["WooCommerce", "WordPress", "Baselinker", "Cloudflare", "PHP"]
+image: "/images/projects/twinsstal-desktop.webp"
 category: "independent"
 featured: false
 wip: true
