@@ -17,13 +17,13 @@ const t = getTranslations(locale as "pl" | "en");
 ---
 
 <article
-  class="group bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 motion-safe:hover:-translate-y-1 motion-safe:transition-transform motion-safe:duration-200"
+  class="group bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 motion-safe:hover:-translate-y-1 motion-safe:transition-transform motion-safe:duration-200 has-[a:focus-visible]:outline-3 has-[a:focus-visible]:outline-offset-4 has-[a:focus-visible]:outline-secondary has-[a:focus-visible]:shadow-xl motion-safe:has-[a:focus-visible]:-translate-y-1"
 >
   <a
     href={url}
     target="_blank"
     rel="noopener noreferrer"
-    class="block active:scale-[0.99]"
+    class="block active:scale-[0.99] focus-visible:outline-none"
   >
     <div class="aspect-video bg-text/10 relative overflow-hidden">
       {
@@ -37,7 +37,7 @@ const t = getTranslations(locale as "pl" | "en");
         <img
           src={image}
           alt={`Screenshot of ${title}`}
-          class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+          class="w-full h-full object-cover object-top group-hover:scale-105 group-has-[a:focus-visible]:scale-105 transition-transform duration-300"
           loading="lazy"
           width="800"
           height="450"
@@ -50,14 +50,14 @@ const t = getTranslations(locale as "pl" | "en");
         </div>
       )}
       <div
-        class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 group-has-[a:focus-visible]:opacity-100 transition-opacity duration-300"
       >
       </div>
     </div>
 
     <div class="p-6">
       <h3
-        class="text-xl font-bold text-text mb-2 group-hover:text-primary transition-colors"
+        class="text-xl font-bold text-text mb-2 group-hover:text-primary group-has-[a:focus-visible]:text-primary transition-colors"
       >
         {title}
       </h3>
@@ -77,13 +77,13 @@ const t = getTranslations(locale as "pl" | "en");
       </div>
 
       <div class="mt-4 flex items-center text-primary font-medium">
-        <span class="group-hover:mr-2 transition-all"
+        <span class="group-hover:mr-2 group-has-[a:focus-visible]:mr-2 group-has-[a:focus-visible]:underline transition-all"
           >{
             t.portfolio?.viewProject ? t.portfolio.viewProject : "View project"
           }</span
         >
         <svg
-          class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"
+          class="w-4 h-4 opacity-0 group-hover:opacity-100 group-has-[a:focus-visible]:opacity-100 transition-opacity"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

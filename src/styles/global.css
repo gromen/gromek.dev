@@ -122,9 +122,11 @@ html {
 }
 
 /* Accessibility: Focus visible for keyboard navigation */
-:focus-visible {
-  outline: 2px solid oklch(var(--primary));
-  outline-offset: 2px;
+@layer base {
+  :focus-visible {
+    outline: 2px solid oklch(var(--primary));
+    outline-offset: 2px;
+  }
 }
 
 /* Reduce motion for users who prefer it */
